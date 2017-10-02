@@ -1,0 +1,29 @@
+taxonomies:
+  tags: true
+title: News Post
+fields:
+  title:
+    type: title
+    display: Title
+    localizable: true
+  sub_title:
+    type: textarea
+    display: Subtitle
+  intro_image:
+    type: assets
+    display: intro_image
+    container: main
+    folder: img
+    max_files: 1
+  hero_image:
+    type: assets
+    display: hero_image
+    container: main
+    folder: img
+    max_files: 1
+  content:
+    type: markdown
+    display: Content
+    cheatsheet: true
+    container: main
+    folder: img
