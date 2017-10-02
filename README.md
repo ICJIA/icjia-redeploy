@@ -1,0 +1,5 @@
+# Adult Redeploy Illinois
+
+Adult Redeploy Illinois was established by the Crime Reduction Act (Public Act 96-0761) to provide financial incentives to local jurisdictions for programs that allow diversion of non-violent offenders from state prisons by providing community-based services. Grants are provided to counties, groups of counties, and judicial circuits to increase programming in their areas, in exchange for reducing the number of people they send to the Illinois Department of Corrections. 
+
+The Crime Reduction Act is based on the premise that crime can be reduced and the costs of the criminal justice system can be controlled by understanding and addressing the reasons why people commit crimes. It is also based on the premise that local jurisdictions (judicial circuits or counties) know best what resources are necessary to reduce crime. Rigorous evaluation processes with standardized performance measurements are required to confirm the effectiveness of services in reducing crime. 
