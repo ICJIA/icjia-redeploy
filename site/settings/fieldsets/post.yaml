@@ -1,27 +1,64 @@
-title: Blog Post
+title: News Post
 hide: true
 fields:
   title:
     type: title
     display: Title
     localizable: true
-  sub_title:
-    type: textarea
-    display: Subtitle
-    localizable: true
+  images:
+    type: section
+    display: News post images
+    instructions: Generally, you'll want a hero image or an intro image -- but not both.
   intro_image:
     type: assets
     display: Intro Image
+    instructions: The intro image will appear directly under the post title. 
     container: main
     folder: img
     max_files: 1
+  intro_image_caption:
+    type: text
+    display: Intro image caption
   hero_image:
     type: assets
     display: Hero Image
+    instructions: The hero image appears full width above the title.<br><b>Generally, you'll want a hero image or an intro image -- but not both.</b>
     container: main
     folder: img
     max_files: 1
+  add_overlay:
+    type: toggle
+    display: Add contrast overlay to hero image?
+    instructions: Toggle this '<b>on</b>' to add a transparent overlay to darken the hero image slightly.<br><b>The overlay adds contrast when superimposing the news post title over lighter images.</b>
+    default: false
+  text:
+    type: section
+    display: News post content
+  short_description:
+    type: markdown
+    display: Short description
+    instructions: The short description displays as the teaser in search and other listings. If omitted, a truncated version of the main content will be used as the teaser. <b>The short description is not displayed on the page.</b>
+  abstract:
+    display: Abstract
+    instructions: This is displayed directly above the main content in a lighter font. <b>Use this as a news post intro or summary.</b>
+    type: markdown
   content:
     type: markdown
+    instructions: Main News post content
     display: Content
     localizable: true
+    cheatsheet: true
+    container: main
+  options:
+    type: section
+    display: News post options
+  # add_disqus:
+  #   display: Add Disqus comment field?
+  #   instructions: "Replace the <b>Recent News Posts</b> with a <a href='https://disqus.com/' target='_blank'>Disqus comment field</a> at the bottom of a news page. Users will be able to leave comments and respond to comment.<br><b>Use this with caution.</b>""
+  #   type: toggle
+  #   default: false
+  add_dropcap:
+    display: Add a dropcap to the first letter of first paragraph?
+    type: toggle
+    default: false
+

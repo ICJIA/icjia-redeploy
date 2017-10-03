@@ -1,0 +1,36 @@
+title: Home
+hide: true
+taxonomies:
+  tags: false
+  authors: false
+create_title: Illinois Adult Redeploy Home
+fields:
+  is_hidden:
+    display: Hide page from navbar?
+    type: toggle
+    display: Hide from navigation
+    default: true
+  title:
+    type: title
+    display: Title
+    localizable: true
+  splash:
+    type: assets
+    max_files: 1
+    display: Splash image
+    container: main
+    folder: img
+  accent:
+    type: assets
+    max_files: 1
+    display: Accent/Secondary image
+    container: main
+    folder: img
+  short_description:
+    type: markdown
+    display: Short description
+    instructions: A truncated version of this will display as the teaser in search.
+    localizable: true
+  content:
+    type: markdown
+    display: Content

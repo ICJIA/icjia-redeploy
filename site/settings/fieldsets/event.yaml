@@ -1,6 +1,5 @@
 taxonomies:
-  tags: true
-title: News Post
+title: Event
 fields:
   title:
     type: title

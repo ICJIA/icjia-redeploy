@@ -2,6 +2,7 @@ collections:
   news: '/news/{year}/{month}/{day}/{slug}'
 taxonomies:
   tags: '/news/tags/{slug}'
+  author: '/authors/{slug}'
 routes:
   /news/tags: news/taxonomies
   /search: search
@@ -12,4 +13,3 @@ routes:
   /register: auth/register
   /forgot-password: auth/password-forgot
   /reset-password: auth/password-reset
-

@@ -1,0 +1,10 @@
+driver: local
+algolia_api_key: ""
+algolia_app_id: ""
+auto_index: true
+default_index: default
+searchable:
+  - title
+  - content
+  - abstract
+  - short_description

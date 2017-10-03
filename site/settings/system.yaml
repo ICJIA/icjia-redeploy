@@ -3,8 +3,8 @@ locales:
   en:
     full: en_US
     name: English
-    url: http://redeploy/
-timezone: UTC
+    url: http://adultredeployil.us/
+timezone: CST6CDT
 date_format: F jS, Y
 default_extension: md
 filesystems:
@@ -42,4 +42,4 @@ redactor:
         - italic
 csrf_exclude: [ ]
 send_powered_by_header: true
-ensure_unique_ids: false
+ensure_unique_ids: true
