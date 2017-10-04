@@ -2,16 +2,16 @@ title: Main Assets
 path: assets
 url: /assets
 assets:
-  img/black-bear-cubs.jpg:
+  img/dev/black-bear-cubs.jpg:
     title: Black Bear Cubs
     alt: Some black bears standing up
-  img/coffee-mug.jpg:
+  img/dev/coffee-mug.jpg:
     title: Coffee Mug
-  img/jedi-set.jpg:
+  img/dev/jedi-set.jpg:
     title: Jedi Set
     alt: The set of The Return of the Jedi
-  img/me.jpg:
+  img/dev/me.jpg:
     title: Me
     alt: Niles Peppertrout
-  img/redwood-sign.jpg:
+  img/dev/redwood-sign.jpg:
     title: redwood sign

@@ -1,0 +1,21 @@
+<section class="regular extra">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12" style="padding-bottom: 250px">
+                <header>
+                    <h1>Tags</h1>
+
+                </header>
+
+                <article class="list">
+                    <ul class="tags">
+                        {{ taxonomy:tags sort="title" }}
+                        <li><a href="{{ url }}" class="tag">{{ title }}</a></li>
+                        {{ /taxonomy:tags }}
+                    </ul>
+                </article>
+
+            </div>
+        </div>
+    </div>
+</section>

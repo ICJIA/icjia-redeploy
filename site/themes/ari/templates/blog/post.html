@@ -1,0 +1,74 @@
+ {{if hero_image}}
+<section class="hero">
+
+    <div class="hero-background" style="background-image: url({{ hero_image }})">
+        {{ if add_overlay == "true"}}
+        <div class="overlay"></div>
+        {{/if}}
+        <header>
+            <h1>{{ title wrap="h1"}}</h1>
+
+        </header>
+        <div class="meta" style="">
+
+            <div class=" name " style="font-weight: 900; ">
+                {{authors | sentence_list}}
+            </div>
+            <div class="length ">{{ content | read_time }} minute read</div>
+            <div class="date ">
+                {{ date format="F j, Y " }}
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid ">
+        <div class="col-md-2 "></div>
+        <div class="col-md-8 ">
+            {{partial:article-content}}
+        </div>
+    </div>
+</section>
+
+{{ else }}
+
+
+<section class="regular ">
+    <div class="container-fluid ">
+        <div class="col-md-2 "></div>
+        <div class="col-md-8 ">
+            <header>
+                <div class="meta clearfix ">
+                    <div class="author ">
+
+
+
+                        <div style="float: left; font-size: 16px; font-weight: 900; color: #000 ">
+                            {{authors | sentence_list}}
+
+                        </div>
+
+                        <div class="length " style="clear: both; font-size: 14px ">{{ content | read_time }} minute read</div>
+
+                    </div>
+                    <div class="date ">
+                        {{ date format="F j, Y " }}
+                    </div>
+                </div>
+                <h1 style="margin-top: 25px ">{{ title }}</h1>
+            </header>
+            {{partial:article-content}}
+        </div>
+    </div>
+
+</section>
+
+{{/if}}
+<section class="article-footer ">
+    <div class="container ">
+        <div class="row ">
+            <div class="col-md-12 ">
+                {{if add_disqus == 'true'}} {{ disqus:comments id="{ id } " }} {{else}} {{partial:article-footer}} {{/if}}
+            </div>
+        </div>
+
+    </div>
+</section>

@@ -1,0 +1,32 @@
+<article class="content">
+    <div class="no-print">
+        {{ if intro_image }}
+        <p class="text-center">
+            <img src="{{ glide :src='intro_image' quality='70' crop_focal}}" class="intro" alt="{{if alt}}{{alt}}{{else}}{{title | sanitize | strip_tags}}{{/if}}"></p>
+        {{ if intro_image_caption}}
+        <div class="text-center">
+            <div class="caption">{{intro_image_caption}}</div>
+        </div>
+        {{/if}} {{ /if }}
+    </div> {{ if abstract }}
+    <div class="abstract spacer">{{abstract}}</div>
+    {{/if}}
+
+    <div id="body-content" {{if add_dropcap=='true ' }} class="dropcap" {{/if}}>
+
+        {{ content }}
+
+    </div>
+
+    <div class="no-print">
+        <h5 style="padding-bottom: 8px; border-bottom: 1px solid #ccc">Tags</h5>
+        <ul class="tags" style="margin-top: -30px">
+            {{ tags }}
+            <li><a href="{{ url }}" class="tag">{{ title | deslugify }}</a></li>
+            {{ /tags }}
+        </ul>
+
+        {{partial:author-listing}}
+    </div>
+
+</article>

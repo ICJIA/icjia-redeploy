@@ -1,0 +1,32 @@
+<nav class="navbar navbar-ari navbar-fixed-top">
+    <div class="container-fluid">
+
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-main" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand uppercase" href="/"><span class="brand">Adult Redeploy</span>&nbsp;&nbsp;|&nbsp;&nbsp;Illinois</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="nav-main">
+            <ul class="nav navbar-nav">
+                {{ nav from="/" include_home="true" scope="tag" is_hidden:isnt="true"}}
+                <li{{ if is_current or is_parent }} class="active" {{ /if }}>
+                    <a href="{{ url }}">{{ tag:nav_title or title }}
+                        </a>
+                    </li>
+                    {{ /nav }}
+            </ul>
+            <form class="navbar-form navbar-right" role="search" action="{{ link to='search' }}">
+                <div class="form-group">
+                    <input type="text" class="form-control search" name="q" placeholder="Search">
+                </div>
+            </form>
+
+        </div>
+
+    </div>
+</nav>

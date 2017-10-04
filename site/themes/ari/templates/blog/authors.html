@@ -1,0 +1,22 @@
+<section class="regular extra">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <header>
+
+                    <h1 class="h2" style="border-bottom: 1px solid #ccc; padding-bottom: 8px">TVPP Blog Authors</h1>
+                </header>
+
+                <article class="list">
+                    <ul class="tags">
+                        {{ taxonomy:authors sort="title" }}
+                        <li><a href="{{ url }}" class="tag author">{{ title }}</a></li>
+                        {{ /taxonomy:authors }}
+                    </ul>
+                </article>
+
+            </div>
+        </div>
+    </div>
+</section>
