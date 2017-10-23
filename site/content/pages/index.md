@@ -13,6 +13,44 @@ template: home/index
 fieldset: home
 id: db0ae4e3-4f10-4802-bc40-0b880cbf02c7
 ---
+
+<style>
+  .bootstrap-select {
+    font-family: 'Lato', sans-serif;
+    font-weight: 900 !important;
+    font-size: 18px !important;
+}
+.bootstrap-select.btn-group .dropdown-menu {
+    font-size: 14px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700 !important;
+}
+.factsheet {display: none}
+
+.nav>li {
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.nav>li>a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    color: #aaa;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+    color: #068587;
+    cursor: default;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-bottom-color: transparent;
+}
+
+
+
+</style>
+
 <!-- Splash image -->
 <div class="homeHero hidden-sm hidden-xs" style="background-image: url({{splash}});">
   <div class="homeHeader">
@@ -90,8 +128,78 @@ community-based supervision and services</h4>
 
   <div class="row is-flex welcome-photo">
     
-    <div class="col-md-5 welcome-text dark">
-      <h1 class="h3" style=" ">About Adult Redeploy Illinois</h1>
+ 
+  <div class="col-md-7">
+
+      <div>
+      <img src="/assets/img/ARI2017map.png" style="" width="500" alt="Adult Redeploy Illinois SFY2017 Sites" class="img-responsive">
+      </div>
+
+      
+
+
+
+
+
+      
+     
+    </div>
+
+
+  <div class="col-md-5">
+  <div class="text-center" >
+      <div style="color: #aaa; font-family: 'Lato', sans-serif; font-weight: 900; margin-bottom: 15px;">Display ARI Fact Sheet</div>
+
+
+      <select class="selectpicker" style="font-size: 14px; font-family: 'Lato', sans-serif !important" title="Choose one of the following...">
+  <optgroup label="Judicial Circuits" style="font-family: 'Lato', sans-serif !important;">
+    <option value="Circuit X">Circuit X</option>
+    <option value="Circuit Y">Circuit Y</option>
+    <option value="Circuit Z">Circuit Z</option>
+  </optgroup>
+  <optgroup label="Counties">
+    <option value="County 1">County 1</option>
+    <option value="County 2">County 2</option>
+    <option value="County 3">County 3</option>
+  </optgroup>
+  <optgroup label="Adult Redeploy Sites">
+    <option>Site 1</option>
+    <option>Site 2</option>
+    <option>Site 3</option>
+  </optgroup>
+  <optgroup label="Adult Redeploy Planning Grant Counties">
+    <option>Planning Grant County 1</option>
+    <option>Planning Grant County 2</option>
+    <option>Planning Grant County 3</option>
+  </optgroup>
+</select>
+
+</div>
+  <div class="factsheet panel panel-default" style="margin-top: 40px; font-size: 14px;">
+  <div class="panel-heading">
+    <h3 class="panel-title" style="text-transform: uppercase"></h3>
+  </div>
+  <div class="panel-body">
+    <h2 class="h4">Title 1</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut varius sapien ac quam lacinia, quis imperdiet erat volutpat. Nulla non ex lacinia, rhoncus nulla sit amet, lobortis leo. Cras lacinia tellus eleifend iaculis volutpat. Sed sed tortor vestibulum nunc tempus egestas. Sed interdum consectetur lectus. Phasellus in fermentum ipsum, id fermentum sapien. Mauris ac imperdiet metus, in rutrum nibh. Aenean hendrerit, arcu ac dignissim sagittis, metus mi tempus ante, ut vehicula felis lacus ut enim. Ut sed mattis ex. Curabitur venenatis feugiat enim a sollicitudin. </p>
+    <h2 class="h4">Title 2</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut varius sapien ac quam lacinia, quis imperdiet erat volutpat. Nulla non ex lacinia, rhoncus nulla sit amet, lobortis leo. Cras lacinia tellus eleifend iaculis volutpat. Sed sed tortor vestibulum nunc tempus egestas. Sed interdum consectetur lectus. Phasellus in fermentum ipsum, id fermentum sapien. Mauris ac imperdiet metus, in rutrum nibh. Aenean hendrerit, arcu ac dignissim sagittis, metus mi tempus ante, ut vehicula felis lacus ut enim. Ut sed mattis ex. Curabitur venenatis feugiat enim a sollicitudin. </p>
+
+
+  </div>
+</div>
+</div>
+
+
+  </div>
+
+</div>
+
+<section style="background: #eee; border-top: 1px solid #aaa;">
+<div class="container-fluid" style=" padding-top: 50px; padding-bottom: 50px">
+ <div class="row is-flex">
+ <div class="col-md-5">
+ <h1 class="h3" style=" ">About Adult Redeploy Illinois</h1>
             <p >Adult Redeploy Illinois is a state initiative providing funding and technical assistance to local jurisdictions to support the diversion of non-violent offenders from prison to more effective and less expensive community-based supervision and services.</p>
 
 <p>ARI sites use grant funds to design and implement local programs that address offenders' risks and needs and leverage their assets (family support, employment) to improve public safety and offender outcomes. ARI has grown from five initial pilot sites in early 2011, to the current 20 sites implementing 39 programs covering 39 Illinois counties (as of March 2017).</p>
@@ -100,27 +208,45 @@ community-based supervision and services</h4>
 <p>Nullam hendrerit quam nec arcu dignissim fringilla. Nullam ultrices risus eget velit vulputate porttitor. Aliquam sit amet purus scelerisque arcu vulputate finibus sodales vitae lacus. Pellentesque quis efficitur metus, non efficitur risus. Vestibulum
     id nulla magna.</p>
 
-    <div class="text-center" style="padding-top: 50px">
-    <a href="" class="btn btn-primary" style="font-weight: 700; text-transform: uppercase; font-family: 'Lato', sans-serif; font-size: 18px"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>&nbsp;&nbsp;Download ARI Fact Sheet</a>
-    </div>
 
-
-  </div>
-  <div class="col-md-7">
-
-      <div >
-      <img src="/assets/img/ARI2017map.png" width="900" style="padding-right: 00px" alt="Adult Redeploy Illinois SFY2017 Sites" class="img-responsive">
-      </div>
-      
-     
-    </div>
-  </div>
-
-  
-
-  
+ 
 
 </div>
+
+
+<div class="col-md-7">
+
+<div>
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist" >
+    <li role="presentation" class="active"><a href="#news" aria-controls="news" role="tab" data-toggle="tab">ARI News</a></li>
+    <li role="presentation"><a href="#events" aria-controls="events" role="tab" data-toggle="tab">Events</a></li>
+    
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="news">News</div>
+    <div role="tabpanel" class="tab-pane" id="events">Events</div>
+
+  </div>
+
+</div>
+
+
+</div>
+
+
+
+  </div>
+  </div>
+
+  </section>
+
+  
+
+
 
 
 

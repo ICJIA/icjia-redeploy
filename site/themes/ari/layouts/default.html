@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="{{ theme:css }}">
     <script src="https://use.fontawesome.com/1e0901bc9f.js"></script>
 
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
+
     <!-- Facebook metatags -->
     <meta property="og:title" content="{{title}}" />
     <meta property="og:site_name" content="{{site_name}}" />
@@ -80,12 +82,18 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="{{ theme:js }}"></script>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
 
     <script>
         $(document).ready(function() {
-            $('.slider').bxSlider();
+            $('.selectpicker').selectpicker();
+            $('.selectpicker').on('changed.bs.select', function(e) {
+                //console.log(e.target.value)
+                $('.factsheet').show();
+                $('.panel-title').html(e.target.value)
+            });
         });
     </script>
 
