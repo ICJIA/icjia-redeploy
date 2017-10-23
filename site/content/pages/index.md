@@ -47,6 +47,8 @@ id: db0ae4e3-4f10-4802-bc40-0b880cbf02c7
     border-bottom-color: transparent;
 }
 
+.tab-pane {padding: 30px 10px 30px 10px}
+
 
 
 </style>
@@ -175,7 +177,7 @@ community-based supervision and services</h4>
 </select>
 
 </div>
-  <div class="factsheet panel panel-default" style="margin-top: 40px; font-size: 14px;">
+  <div class="factsheet panel panel-default" style="margin-top: 40px; font-size: 16px;">
   <div class="panel-heading">
     <h3 class="panel-title" style="text-transform: uppercase"></h3>
   </div>
@@ -226,7 +228,7 @@ community-based supervision and services</h4>
   </ul>
 
   <!-- Tab panes -->
-  <div class="tab-content">
+  <div class="tab-content" >
     <div role="tabpanel" class="tab-pane active" id="news">News</div>
     <div role="tabpanel" class="tab-pane" id="events">Events</div>
 
