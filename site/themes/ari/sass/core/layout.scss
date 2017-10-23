@@ -14,6 +14,11 @@
     margin: 0;
 }
 
+.about-ari {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
 .hero {
     padding-bottom: 35px !important;
     position: relative;
@@ -223,16 +228,25 @@ footer {
         font-family: "Lato", sans-serif;
     }
     .homeHeader h3,
-    &.mobile h3 {
+    {
         font-weight: 900 !important;
         text-transform: uppercase !important;
         font-size: 44px !important;
     }
     .homeHeader h4,
-    &.mobile h4 {
+    {
         font-weight: 900 !important;
         color: #fff !important;
     }
+}
+
+.mobile h3 {
+    color: $color_green !important;
+    font-size: 50px;
+}
+
+.mobile h4 {
+    color: #333 !important;
 }
 
 
@@ -305,6 +319,10 @@ footer {
     color: #fff;
     padding: 30px 40px;
     font-family: $font-sans-head;
+}
+
+.welcome-text.dark {
+    color: #333;
 }
 
 .welcome-text a:hover {
