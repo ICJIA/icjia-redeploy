@@ -223,7 +223,7 @@ community-based supervision and services</h4>
   <!-- Nav tabs -->
   <ul class="nav nav-tabs" role="tablist" >
     <li role="presentation" class="active"><a href="#news" aria-controls="news" role="tab" data-toggle="tab">ARI News</a></li>
-    <li role="presentation"><a href="#events" aria-controls="events" role="tab" data-toggle="tab">Events</a></li>
+    <li role="presentation"><a href="#events" aria-controls="events" role="tab" data-toggle="tab">Upcoming Events</a></li>
     
   </ul>
 
