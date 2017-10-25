@@ -708,9 +708,9 @@ article.content iframe {
 }
 
 .block img.small-image {
-  border: 1px solid rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.5);
   float: right;
-  margin: 3px 0 0 32px;
+  margin: 3px 10px 0 32px;
 }
 
 .block img.small-image.left {

@@ -5,11 +5,11 @@
         <link>{{ site_url }}</link>
         <description>{{ content | cdata }}</description>
         {{ /get_content }}
-        <lastBuildDate>{{ collection:blog limit="1" }}{{ date format="r" }}{{ /collection:blog }}</lastBuildDate>
+        <lastBuildDate>{{ collection:news limit="1" }}{{ date format="r" }}{{ /collection:news }}</lastBuildDate>
         <language>en-us</language>
         <copyright>Copyright {{ current_date format='Y' }}</copyright>
         <ttl>3600</ttl>
-        {{ collection:blog }}
+        {{ collection:news }}
         <item>
             <title>{{ title | cdata }}</title>
             <link>{{ permalink }}</link>
@@ -17,6 +17,6 @@
             <pubDate>{{ date format="r" }}</pubDate>
             <description>{{ content | full_urls | cdata }}</description>
         </item>
-        {{ /collection:blog }}
+        {{ /collection:news }}
     </channel>
 </rss>

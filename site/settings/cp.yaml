@@ -8,11 +8,6 @@ widgets:
     limit: 5
     importance: 3
   - 
-    type: collection
-    collection: events
-    limit: 5
-    importance: 5
-  - 
     type: updater
   - 
     type: form

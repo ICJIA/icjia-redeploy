@@ -52,13 +52,34 @@ fields:
   options:
     type: section
     display: News post options
-  # add_disqus:
-  #   display: Add Disqus comment field?
-  #   instructions: "Replace the <b>Recent News Posts</b> with a <a href='https://disqus.com/' target='_blank'>Disqus comment field</a> at the bottom of a news page. Users will be able to leave comments and respond to comment.<br><b>Use this with caution.</b>""
-  #   type: toggle
-  #   default: false
   add_dropcap:
     display: Add a dropcap to the first letter of first paragraph?
     type: toggle
     default: false
+  event_options:
+    type: section
+    display: Event options
+    show_when:
+      has_extended_content: true
+  event:
+    display: Add to event listing?
+    type: toggle
+    instructions: Toggle 'on' to list in 'Events' section.
+    default: false
+    
+  event_news_suppress:
+    display: Suppress news listing?
+    instructions: Toggle 'on' to list only in 'Events' -- not in 'News'
+    type: toggle
+    default: false
+    
+  event_expiration:
+    display: Expiration date?
+    type: date
+    allow_time: false
+    allow_blank: true
+    default:
+    
+ 
+    
 

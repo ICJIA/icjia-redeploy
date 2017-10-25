@@ -5,9 +5,9 @@
             <div class="col-md-12">
                 <div class="list" style="margin-top: -30px">
                     <div class="regular">
-                        <h6><em>Blog Posts by</em> {{title}}</h6>
+                        <h6><em>News Posts by</em> {{title}}</h6>
                         <article class="list">
-                            {{ collection:blog as="posts" sort="date:desc" taxonomy:authors="{title}"}} {{ posts scope="tag" }} {{ partial:block }} {{ /posts }} {{ /collection:blog }}
+                            {{ collection:news as="posts" sort="date:desc" taxonomy:authors="{title}"}} {{ posts scope="tag" }} {{ partial:block }} {{ /news }} {{ /collection:news }}
                         </article>
                     </div>
                 </div>

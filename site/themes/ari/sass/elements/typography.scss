@@ -227,9 +227,9 @@ article.content {
         max-width: 100%;
     }
     img.small-image {
-        border: 1px solid rgba(0, 0, 0, 0.05);
+        border: 1px solid rgba(0, 0, 0, 0.5);
         float: right;
-        margin: 3px 0 0 $gap;
+        margin: 3px 10px 0 $gap;
         &.left {
             float: left;
             margin: 3px $gap 0 0;

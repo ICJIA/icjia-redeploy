@@ -49,6 +49,8 @@ id: db0ae4e3-4f10-4802-bc40-0b880cbf02c7
 
 .tab-pane {padding: 30px 10px 30px 10px}
 
+.tab-panel {padding-right: 25px}
+
 
 
 </style>
@@ -134,7 +136,7 @@ community-based supervision and services</h4>
   <div class="col-md-7">
 
       <div>
-      <img src="/assets/img/ARI2017map.png" style="" width="500" alt="Adult Redeploy Illinois SFY2017 Sites" class="img-responsive">
+      <img src="/assets/img/ARI2017map.png" style="" width="400" alt="Adult Redeploy Illinois SFY2017 Sites" class="img-responsive">
       </div>
 
       
@@ -177,6 +179,10 @@ community-based supervision and services</h4>
 </select>
 
 </div>
+<div class="local-program-description well" style="margin-top: 60px; font-family: 'Lato' ,sans-serif">
+<p>As of June 2017, Adult Redeploy Illinois has <strong>20 local sites</strong> operating <strong>39 diversion programs</strong> serving <strong>39 counties</strong>. </p><p>Additionally, ARI funds planning in areas covering <strong>10 additional counties</strong>.</p>
+
+</div>
   <div class="factsheet panel panel-default" style="margin-top: 40px; font-size: 16px;">
   <div class="panel-heading">
     <h3 class="panel-title" style="text-transform: uppercase"></h3>
@@ -184,8 +190,7 @@ community-based supervision and services</h4>
   <div class="panel-body">
     <h2 class="h4">Title 1</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut varius sapien ac quam lacinia, quis imperdiet erat volutpat. Nulla non ex lacinia, rhoncus nulla sit amet, lobortis leo. Cras lacinia tellus eleifend iaculis volutpat. Sed sed tortor vestibulum nunc tempus egestas. Sed interdum consectetur lectus. Phasellus in fermentum ipsum, id fermentum sapien. Mauris ac imperdiet metus, in rutrum nibh. Aenean hendrerit, arcu ac dignissim sagittis, metus mi tempus ante, ut vehicula felis lacus ut enim. Ut sed mattis ex. Curabitur venenatis feugiat enim a sollicitudin. </p>
-    <h2 class="h4">Title 2</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut varius sapien ac quam lacinia, quis imperdiet erat volutpat. Nulla non ex lacinia, rhoncus nulla sit amet, lobortis leo. Cras lacinia tellus eleifend iaculis volutpat. Sed sed tortor vestibulum nunc tempus egestas. Sed interdum consectetur lectus. Phasellus in fermentum ipsum, id fermentum sapien. Mauris ac imperdiet metus, in rutrum nibh. Aenean hendrerit, arcu ac dignissim sagittis, metus mi tempus ante, ut vehicula felis lacus ut enim. Ut sed mattis ex. Curabitur venenatis feugiat enim a sollicitudin. </p>
+
 
 
   </div>
@@ -210,6 +215,9 @@ community-based supervision and services</h4>
 <p>Nullam hendrerit quam nec arcu dignissim fringilla. Nullam ultrices risus eget velit vulputate porttitor. Aliquam sit amet purus scelerisque arcu vulputate finibus sodales vitae lacus. Pellentesque quis efficitur metus, non efficitur risus. Vestibulum
     id nulla magna.</p>
 
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pharetra nibh dui, et molestie nunc condimentum non. Integer lectus leo, auctor a erat et, fringilla consectetur augue. Pellentesque sodales massa ligula, ac ultrices leo cursus eget.</p>
+<p>Nullam hendrerit quam nec arcu dignissim fringilla. Nullam ultrices risus eget velit vulputate porttitor. Aliquam sit amet purus scelerisque arcu vulputate finibus sodales vitae lacus. Pellentesque quis efficitur metus, non efficitur risus. Vestibulum
+    id nulla magna.</p>
 
  
 
@@ -229,7 +237,26 @@ community-based supervision and services</h4>
 
   <!-- Tab panes -->
   <div class="tab-content" >
-    <div role="tabpanel" class="tab-pane active" id="news">News</div>
+    <div role="tabpanel" class="tab-pane active" id="news">
+    
+      
+  
+
+
+
+  <article class="list">
+          {{ collection:news limit="3" scope="tag" sort="date:desc" event_news_suppress:doesnt_exist="true"}} 
+          
+            {{ partial:block }}
+          
+          {{ /collection:news }}
+   </article>
+
+
+
+    
+    
+    </div>
     <div role="tabpanel" class="tab-pane" id="events">Events</div>
 
   </div>

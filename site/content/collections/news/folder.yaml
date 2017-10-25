@@ -1,3 +1,7 @@
-title: News
+title: News & Events
 order: date
 fieldset: post
+template: news/post
+searchable:
+  - title
+  - content

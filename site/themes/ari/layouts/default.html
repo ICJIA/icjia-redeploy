@@ -91,7 +91,9 @@
             $('.selectpicker').selectpicker();
             $('.selectpicker').on('changed.bs.select', function(e) {
                 //console.log(e.target.value)
+                $('.local-program-description').hide()
                 $('.factsheet').show();
+
                 $('.panel-title').html(e.target.value)
             });
         });
