@@ -245,7 +245,7 @@ community-based supervision and services</h4>
 
 
   <article class="list">
-          {{ collection:news limit="3" scope="tag" sort="date:desc" event_news_suppress:doesnt_exist="true"}} 
+          {{ collection:news limit="3" scope="tag" sort="date:desc"}} 
           
             {{ partial:block }}
           
@@ -257,7 +257,30 @@ community-based supervision and services</h4>
     
     
     </div>
-    <div role="tabpanel" class="tab-pane" id="events">Events</div>
+    <div role="tabpanel" class="tab-pane" id="events">
+    
+
+    
+    {{ collection:events sort="event_start: asc" }}
+
+    {{if event_end}}
+
+      {{if event_end | is_future}}
+        {{partial:block-event}}
+      {{/if}}
+
+     {{else}}
+    {{if event_start | is_future}}
+      {{partial:block-event}}
+
+     {{/if}}
+     {{/if}}
+
+  
+          
+        {{ /collection:events }}
+    
+    </div>
 
   </div>
 

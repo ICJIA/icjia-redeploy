@@ -5,7 +5,12 @@ widgets:
   - 
     type: collection
     collection: news
-    limit: 5
+    limit: 10
+    importance: 3
+  - 
+    type: collection
+    collection: events
+    limit: 10
     importance: 3
   - 
     type: updater

@@ -1,5 +1,6 @@
 collections:
   news: '/news/{year}/{month}/{day}/{slug}'
+  events: '/event/{slug}'
 taxonomies:
   tags: '/news/tags/{slug}'
   author: '/authors/{slug}'

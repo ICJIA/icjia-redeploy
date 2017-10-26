@@ -1,4 +1,4 @@
-title: News Post
+title: Post
 hide: true
 fields:
   title:
@@ -7,7 +7,7 @@ fields:
     localizable: true
   images:
     type: section
-    display: News post images
+    display: Post images
     instructions: Generally, you'll want a hero image or an intro image -- but not both.
   intro_image:
     type: assets
@@ -33,7 +33,7 @@ fields:
     default: false
   text:
     type: section
-    display: News post content
+    display: Post content
   short_description:
     type: markdown
     display: Short description
@@ -49,36 +49,12 @@ fields:
     localizable: true
     cheatsheet: true
     container: main
-  options:
-    type: section
-    display: News post options
   add_dropcap:
     display: Add a dropcap to the first letter of first paragraph?
     type: toggle
     default: false
-  event_options:
-    type: section
-    display: Event options
-    show_when:
-      has_extended_content: true
-  event:
-    display: Add to event listing?
-    type: toggle
-    instructions: Toggle 'on' to list in 'Events' section.
-    default: false
-    
-  event_news_suppress:
-    display: Suppress news listing?
-    instructions: Toggle 'on' to list only in 'Events' -- not in 'News'
-    type: toggle
-    default: false
-    
-  event_expiration:
-    display: Expiration date?
-    type: date
-    allow_time: false
-    allow_blank: true
-    default:
+
+ 
     
  
     

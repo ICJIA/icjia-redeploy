@@ -5,24 +5,31 @@ fields:
     type: title
     display: Title
     localizable: true
-  sub_title:
-    type: textarea
-    display: Subtitle
-  intro_image:
-    type: assets
-    display: intro_image
-    container: main
-    folder: img
-    max_files: 1
-  hero_image:
-    type: assets
-    display: hero_image
-    container: main
-    folder: img
-    max_files: 1
+  event_url:
+    type: text
+    display: URL for event
+    instructions: This might an eventbrite link or a link to a registration website
   content:
     type: markdown
-    display: Content
+    display: Additional content
     cheatsheet: true
     container: main
     folder: img
+  event_start:
+    display: Start date.
+    type: date
+    allow_time: false
+    default:
+  event_end:
+    display: End date.
+    instructions: Add an end date if event is longer than a single day.
+    type: date
+    allow_time: false
+    allow_blank: true
+    default:
+  # event_expiration:
+  #   display: Expiration date.
+  #   instructions: Date when event no longer appear in 'event' listings.
+  #   type: date
+  #   allow_time: false
+  #   default:
