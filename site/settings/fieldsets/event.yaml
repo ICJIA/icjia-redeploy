@@ -9,6 +9,9 @@ fields:
     type: text
     display: URL for event
     instructions: This might an eventbrite link or a link to a registration website
+  event_blurb:
+    type: markdown
+    display: Brief event info for front page.
   content:
     type: markdown
     display: Additional content

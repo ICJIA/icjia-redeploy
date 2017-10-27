@@ -1,0 +1,25 @@
+<section class="regular ">
+    <div class="container-fluid ">
+        <div class="col-md-2 "></div>
+        <div class="col-md-8 ">
+            <header>
+                <div class="meta clearfix ">
+                    <div class="author ">
+
+
+
+
+
+                    </div>
+                    <div class="event-date" style="margin-bottom: 5px; margin-top: 15px; text-transform: uppercase; font-size: 22px; color: #666; font-family: 'Lato', sans-serif; font-weight: 900; color: #068587"><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;&nbsp; {{if event_end}} {{event_start format="M j"}} {{else}} {{event_start format="M j, Y"}} {{/if}} {{if event_end}}&nbsp;&nbsp;-&nbsp;&nbsp;{{event_end format="M j, Y"}} {{/if}}
+
+
+                    </div>
+                </div>
+                <h3 style="margin-top: 25px ">{{ title }}</h3>
+            </header>
+            {{partial:event-content}}
+        </div>
+    </div>
+
+</section>

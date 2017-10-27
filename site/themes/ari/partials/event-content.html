@@ -1,0 +1,21 @@
+<article class="content">
+
+
+    <div id="body-content">
+
+        {{ content }}
+
+    </div>
+
+    <div class="no-print">
+        <h5 style="padding-bottom: 8px; border-bottom: 1px solid #ccc">Tags</h5>
+        <ul class="tags" style="margin-top: -30px">
+            {{ tags }}
+            <li><a href="{{ url }}" class="tag">{{ title | deslugify }}</a></li>
+            {{ /tags }}
+        </ul>
+
+
+    </div>
+
+</article>

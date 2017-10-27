@@ -1,4 +1,4 @@
 title: Events
 order: date
 fieldset: event
-template: event/post
+template: events/event
