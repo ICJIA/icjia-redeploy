@@ -24,6 +24,7 @@ var App = {
     },
 
     initializeFactsheets: function initializeFactsheets() {
+        console.log('Factsheet init');
         $('.selectpicker').selectpicker();
         $('.selectpicker').on('changed.bs.select', function (e) {
             $('.local-program-description').hide();

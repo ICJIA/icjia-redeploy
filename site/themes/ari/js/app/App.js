@@ -18,6 +18,7 @@ const App = {
     },
 
     initializeFactsheets: function() {
+        console.log('Factsheet init')
         $('.selectpicker').selectpicker();
         $('.selectpicker').on('changed.bs.select', function(e) {
             $('.local-program-description').hide()
