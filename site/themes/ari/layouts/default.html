@@ -88,14 +88,26 @@
 
     <script>
         $(document).ready(function() {
-            $('.selectpicker').selectpicker();
-            $('.selectpicker').on('changed.bs.select', function(e) {
-                //console.log(e.target.value)
-                $('.local-program-description').hide()
-                $('.factsheet').show();
+            // $('.selectpicker').selectpicker();
+            // $('.selectpicker').on('changed.bs.select', function(e) {
+            //     //console.log(e.target.value)
+            //     $('.local-program-description').hide()
+            //     $('.factsheet').show();
+            //     var siteTitle = $(".selectpicker option:selected").text()
+            //     var siteURL = e.target.value
+            //     $('.panel-title').html(siteTitle)
+            //     console.log('URL: ', e.target.value)
+            //     $.ajax(siteURL, {
+            //         success: function(data) {
+            //             $('.panel-body').html(data)
+            //         },
+            //         error: function() {
+            //             console.log('Error: ', error)
+            //         }
+            //     });
 
-                $('.panel-title').html(e.target.value)
-            });
+
+            // });
         });
     </script>
 

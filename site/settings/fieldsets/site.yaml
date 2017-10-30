@@ -1,0 +1,21 @@
+title: Site
+create_title: ""
+template: sites/site
+fields:
+  title:
+    type: title
+    display: Title
+    localizable: true
+  template:
+    type: template
+    default: site
+  short_description:
+    type: markdown
+    display: Short description
+    instructions: The short description displays as the teaser in search and other listings. If omitted, a truncated version of the main content will be used as the teaser. <b>The short description is not displayed on the page.</b>ß
+  content:
+    type: markdown
+    container: main
+    display: Content
+    instructions: This is the main page content. Use a mix of Markdown and HTML where necessary.
+    cheatsheet: true

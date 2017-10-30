@@ -20,6 +20,38 @@ var App = {
         var addThis = document.createElement('script');
         addThis.setAttribute('src', '//s7.addthis.com/js/300/addthis_widget.js#pubid=cschweda');
         document.body.appendChild(addThis);
+        return this;
+    },
+
+    initializeFactsheets: function initializeFactsheets() {
+        $('.selectpicker').selectpicker();
+        $('.selectpicker').on('changed.bs.select', function (e) {
+            $('.local-program-description').hide();
+            $('.factsheet').show();
+            var siteTitle = $(".selectpicker option:selected").text();
+            var siteURL = e.target.value;
+            $('.panel-title').html(siteTitle);
+            console.log('URL: ', e.target.value);
+            $.ajax(siteURL, {
+                success: function success(data) {
+                    $('.panel-body').html(data);
+                },
+                error: function (_error) {
+                    function error() {
+                        return _error.apply(this, arguments);
+                    }
+
+                    error.toString = function () {
+                        return _error.toString();
+                    };
+
+                    return error;
+                }(function () {
+                    console.log('Error: ', error);
+                })
+            });
+        });
+        return this;
     }
 
 };
@@ -32,8 +64,7 @@ exports.App = App;
 var _App = require('./App.js');
 
 $(function () {
-    _App.App.init().highlightSearch();
-    // .addThis()
+    _App.App.init().highlightSearch().initializeFactsheets();
 });
 
 },{"./App.js":1}]},{},[2]);

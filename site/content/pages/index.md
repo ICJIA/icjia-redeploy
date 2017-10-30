@@ -133,7 +133,7 @@ community-based supervision and services</h4>
   <div class="row is-flex welcome-photo">
     
  
-  <div class="col-md-7">
+  <div class="col-md-5">
 
       <div>
       <img src="/assets/img/ARI2017map.png" style="" width="400" alt="Adult Redeploy Illinois SFY2017 Sites" class="img-responsive">
@@ -150,32 +150,21 @@ community-based supervision and services</h4>
     </div>
 
 
-  <div class="col-md-5">
+  <div class="col-md-7">
   <div class="text-center" >
       <div style="color: #aaa; font-family: 'Lato', sans-serif; font-weight: 900; margin-bottom: 15px;">Display ARI Fact Sheet</div>
 
 
+
       <select class="selectpicker" style="font-size: 14px; font-family: 'Lato', sans-serif !important" title="Choose one of the following...">
-  <optgroup label="Judicial Circuits" style="font-family: 'Lato', sans-serif !important;">
-    <option value="Circuit X">Circuit X</option>
-    <option value="Circuit Y">Circuit Y</option>
-    <option value="Circuit Z">Circuit Z</option>
+  <optgroup label="Adult Redeploy Illinois Sites" style="font-family: 'Lato', sans-serif !important;">
+  {{ collection:sites }}
+   <option value="{{url}}"><a href="{{url}}">{{title}}</a></option>
+{{ /collection:sites }}
+    
+    
   </optgroup>
-  <optgroup label="Counties">
-    <option value="County 1">County 1</option>
-    <option value="County 2">County 2</option>
-    <option value="County 3">County 3</option>
-  </optgroup>
-  <optgroup label="Adult Redeploy Sites">
-    <option>Site 1</option>
-    <option>Site 2</option>
-    <option>Site 3</option>
-  </optgroup>
-  <optgroup label="Adult Redeploy Planning Grant Counties">
-    <option>Planning Grant County 1</option>
-    <option>Planning Grant County 2</option>
-    <option>Planning Grant County 3</option>
-  </optgroup>
+  
 </select>
 
 </div>
@@ -185,12 +174,11 @@ community-based supervision and services</h4>
 </div>
   <div class="factsheet panel panel-default" style="margin-top: 40px; font-size: 16px;">
   <div class="panel-heading">
-    <h3 class="panel-title" style="text-transform: uppercase"></h3>
+    <h3 class="panel-title" style="text-transform: uppercase">Site Description</h3>
   </div>
   <div class="panel-body">
-    <h2 class="h4">Title 1</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut varius sapien ac quam lacinia, quis imperdiet erat volutpat. Nulla non ex lacinia, rhoncus nulla sit amet, lobortis leo. Cras lacinia tellus eleifend iaculis volutpat. Sed sed tortor vestibulum nunc tempus egestas. Sed interdum consectetur lectus. Phasellus in fermentum ipsum, id fermentum sapien. Mauris ac imperdiet metus, in rutrum nibh. Aenean hendrerit, arcu ac dignissim sagittis, metus mi tempus ante, ut vehicula felis lacus ut enim. Ut sed mattis ex. Curabitur venenatis feugiat enim a sollicitudin. </p>
-
+    
+<div class="text-center">Loading ...</div>
 
 
   </div>
