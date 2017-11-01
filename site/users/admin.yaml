@@ -3,4 +3,4 @@ super: true
 first_name: admin
 last_name: admin
 email: cschweda@gmail.com
-password_hash: $2y$10$GUCUGX2qCq61T4hwNV6Z0.24m0P0KkkQIeA57jNZNsJJ5WkQl/xuW
+password_hash: $2y$10$eh7mkDpIy28sAEVQe9qlGeZQ98ZcUH/bs1Ta5hU3W2SsXHXyTJA0i
