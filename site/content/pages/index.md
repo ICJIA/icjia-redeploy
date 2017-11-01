@@ -3,7 +3,6 @@ is_hidden: false
 title: Adult Redeploy Illinois Home
 nav_title: Home
 splash: /assets/img/ari-splash-04.jpg
-.jpg
 short_description: |
   The Targeted Violence Prevention Program makes outside research on targeted violence prevention and countering
   violent extremism more accessible to community-based and faith-based organizations. TVPP can also partner with
@@ -56,7 +55,7 @@ id: db0ae4e3-4f10-4802-bc40-0b880cbf02c7
 </style>
 
 <!-- Splash image -->
-<div class="homeHero hidden-sm hidden-xs" style="background-image: url({{splash}});">
+<div class="homeHero hidden-sm hidden-xs" {{if get:splash}}style="background-image: url('/assets/img/ari-splash-0{{get:splash}}.jpg');"{{else}}style="background-image: url({{splash}});"{{/if}}>
   <div class="homeHeader">
     <h3> Adult Redeploy Illinois</h3>
     <h4> Diverting non-violent offenders from prison to more effective and less expensive
@@ -195,19 +194,15 @@ community-based supervision and services</h4>
  <div class="row is-flex">
  <div class="col-md-5">
  <h1 class="h3" style=" ">About Adult Redeploy Illinois</h1>
-            <p >Adult Redeploy Illinois is a state initiative providing funding and technical assistance to local jurisdictions to support the diversion of non-violent offenders from prison to more effective and less expensive community-based supervision and services.</p>
+            <p>ARI was established by the <a href="http://www.ilga.gov/legislation/publicacts/fulltext.asp?Name=096-0761">Crime Reduction Act</a> (Public Act 96-0761) to provide financial incentives to local jurisdictions for programs that allow diversion of non-violent offenders from state prisons by providing community-based services. Grants are provided to counties, groups of counties, and judicial circuits to increase programming in their areas, in exchange for reducing the number of people they send to the Illinois Department of Corrections.</p>
 
-<p>ARI sites use grant funds to design and implement local programs that address offenders' risks and needs and leverage their assets (family support, employment) to improve public safety and offender outcomes. ARI has grown from five initial pilot sites in early 2011, to the current 20 sites implementing 39 programs covering 39 Illinois counties (as of March 2017).</p>
+<p>The Crime Reduction Act is based on the premise that crime can be reduced and the costs of the criminal justice system can be controlled by understanding and addressing the reasons *why* people commit crimes. It is also based on the premise that local jurisdictions (judicial circuits or counties) know best what resources are necessary to reduce crime. Rigorous evaluation processes with standardized performance measurements are required to confirm the effectiveness of services in reducing crime. </p>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pharetra nibh dui, et molestie nunc condimentum non. Integer lectus leo, auctor a erat et, fringilla consectetur augue. Pellentesque sodales massa ligula, ac ultrices leo cursus eget.</p>
-<p>Nullam hendrerit quam nec arcu dignissim fringilla. Nullam ultrices risus eget velit vulputate porttitor. Aliquam sit amet purus scelerisque arcu vulputate finibus sodales vitae lacus. Pellentesque quis efficitur metus, non efficitur risus. Vestibulum
-    id nulla magna.</p>
+<p>The ARI program is an example of a national best practice called **"performance incentive funding,"** which other states are adopting in different ways. ARI is based on the successful juvenile model which has been operating since 2004 with positive results. In the first three years of the juvenile Redeploy Illinois program, four pilot sites reduced the number of youth sent to the Department of Juvenile Justice by 51 percent (well above the 25 percent goal), which represents potential youth incarceration cost avoidance to the state of nearly $19 million. </p>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pharetra nibh dui, et molestie nunc condimentum non. Integer lectus leo, auctor a erat et, fringilla consectetur augue. Pellentesque sodales massa ligula, ac ultrices leo cursus eget.</p>
-<p>Nullam hendrerit quam nec arcu dignissim fringilla. Nullam ultrices risus eget velit vulputate porttitor. Aliquam sit amet purus scelerisque arcu vulputate finibus sodales vitae lacus. Pellentesque quis efficitur metus, non efficitur risus. Vestibulum
-    id nulla magna.</p>
+<p>Results expected with Adult Redeploy Illinois include reduced prison overcrowding (based on other states' experiences, with no increase in crime); lowered cost to taxpayers ($24,899 a year for prison vs. less than $200 total for drug school for first offenders or $3,500 on average for drug treatment); an end to the expensive vicious cycle of crime and incarceration. </p>
 
- 
+
 
 </div>
 

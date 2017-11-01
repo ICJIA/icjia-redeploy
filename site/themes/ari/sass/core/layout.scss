@@ -249,6 +249,31 @@ footer {
     color: #333 !important;
 }
 
+.factsheet h1,
+h2 {
+    font-size: 18px !important;
+    padding: 0;
+    margin: 0;
+    padding: 0;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.factsheet .panel-body h3 {
+    font-size: 16px !important;
+    padding: 0;
+    margin: 0;
+    padding: 0;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.factsheet h3.rule {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 8px;
+    margin-bottom: 10px;
+}
+
 
 /* --> HoverBoxes */
 
