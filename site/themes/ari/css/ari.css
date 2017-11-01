@@ -366,6 +366,7 @@ h2 {
 
 .hoverBox a {
   color: #444;
+  font-weight: 400;
 }
 
 .hoverBox:hover > a {
