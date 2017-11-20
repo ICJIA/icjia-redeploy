@@ -1,18 +1,16 @@
 ---
-is_hidden: false
 title: Adult Redeploy Illinois Home
-nav_title: Home
 splash: /assets/img/ari-splash-04.jpg
 short_description: |
   The Targeted Violence Prevention Program makes outside research on targeted violence prevention and countering
   violent extremism more accessible to community-based and faith-based organizations. TVPP can also partner with
   community-level efforts to conduct research on current and new targeted violence prevention programs.
+nav_title: Home
 display_nav: 'Yes'
 template: home/index
 fieldset: home
 id: db0ae4e3-4f10-4802-bc40-0b880cbf02c7
 ---
-
 <style>
   .bootstrap-select {
     font-family: 'Lato', sans-serif;
@@ -101,7 +99,7 @@ community-based supervision and services</h4>
             <li>5 Mental health courts (2 with veteran treatment track)</li>
         </ul>
     </li>
-    <li>12 Intensive supervision probatio with services programs (1 HOPE probation)</li>
+    <li>12 Intensive supervision probation with services programs (1 HOPE probation)</li>
 </ul>
           </div>
         </a>
