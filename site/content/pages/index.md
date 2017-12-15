@@ -37,7 +37,7 @@ id: db0ae4e3-4f10-4802-bc40-0b880cbf02c7
     color: #aaa;
 }
 
-.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+/* .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
     color: #068587;
     cursor: default;
     background-color: #fff;
@@ -47,8 +47,19 @@ id: db0ae4e3-4f10-4802-bc40-0b880cbf02c7
 
 .tab-pane {padding: 30px 10px 30px 10px}
 
-.tab-panel {padding-right: 25px}
+.tab-panel {padding-right: 25px} */
 
+@media (min-width: 768px) {
+  .table-row {
+    display: table;
+    table-layout: fixed;
+  }
+
+  .table-row [class^="col-"] {
+    display: table-cell;
+    float: none;
+  }
+}
 
 
 </style>
@@ -70,12 +81,11 @@ community-based supervision/services!</h4>
   </div>
 </div> 
 
-<!-- hoverBoxes -->
-<!-- <div class="container-fluid fullscreen hidden-xs hidden-sm">
+<!-- <section style="margin-top: 0px;" class="hidden-xs hidden-sm">
+<div class="container-fluid">
 
-<div class="row is-flex">
-
-  <div class="col-sm-12 col-md-4 col-lg-4 hoverBox">
+<div class="row table-row">
+      <div class="col-sm-12 col-md-4 col-lg-4 hoverBox">
         <a href="/our-approach">
           <div class="service-inner">
             <h6 class="entry-title">Key Components</h6>
@@ -118,77 +128,19 @@ community-based supervision/services!</h4>
           </div>
         </a>
       </div>
-    
-  
-</div>
-</div>  -->
-
-
-<!-- About / Map -->
-
-<!-- <div class="container" style="background: #fff; padding-top: 50px; padding-bottom: 50px">
-
-  <div class="row is-flex welcome-photo">
-    
- 
-  <div class="col-md-5">
-
-      <div>
-      <img src="/assets/img/ARI2017map.png" style="" width="400" alt="Adult Redeploy Illinois SFY2017 Sites" class="img-responsive">
-      </div>
-
-      
 
 
 
 
-
-      
-     
-    </div>
-
-
-  <div class="col-md-7">
-  <div class="text-center" >
-      <div style="color: #aaa; font-family: 'Lato', sans-serif; font-weight: 900; margin-bottom: 15px;">Display ARI Fact Sheet</div>
-
-
-
-      <select class="selectpicker" style="font-size: 14px; font-family: 'Lato', sans-serif !important" title="Choose one of the following...">
-  <optgroup label="Adult Redeploy Illinois Sites" style="font-family: 'Lato', sans-serif !important;">
-  {{ collection:sites }}
-   <option value="{{url}}"><a href="{{url}}">{{title}}</a></option>
-{{ /collection:sites }}
-    
-    
-  </optgroup>
-  
-</select>
-
-</div>
-<div class="local-program-description well" style="margin-top: 60px; font-family: 'Lato' ,sans-serif">
-<p>As of June 2017, Adult Redeploy Illinois has <strong>20 local sites</strong> operating <strong>39 diversion programs</strong> serving <strong>39 counties</strong>. </p><p>Additionally, ARI funds planning in areas covering <strong>10 additional counties</strong>.</p>
-
-</div>
-  <div class="factsheet panel panel-default" style="margin-top: 40px; font-size: 16px;">
-  <div class="panel-heading">
-    <h3 class="panel-title" style="text-transform: uppercase">Site Description</h3>
-  </div>
-  <div class="panel-body">
-    
-<div class="text-center">Loading ...</div>
-
-
-  </div>
-</div>
 </div>
 
 
-  </div>
+</div>
+</section> -->
 
-</div> -->
 
-<section style="margin-top: -25px">
+
+<section style="margin-top: -45px">
 <div style="background: #fff;">
         <div class="container-fluid" style="padding: 75px 30px 50px 30px">
             <div class="row">
@@ -213,7 +165,7 @@ community-based supervision/services!</h4>
 
 
  <section style="margin-top: -20px;">
-  <div style="background: #fff;">
+  <div style="background: #ffffff;">
         <div class="container-fluid" style="padding: 0px 30px 50px 30px">
             <div class="row">
                 <div class="col-md-6 hidden-xs hidden-sm">
@@ -263,7 +215,7 @@ community-based supervision/services!</h4>
 
 
 
-<section style="background: #eee; border-top: 1px solid #aaa;">
+<section style="background: #eee; border-top: 1px solid #aaa; border-bottom: 1px solid #aaa;">
 <div class="container-fluid" style=" padding-top: 50px; padding-bottom: 50px">
  <div class="row">
  <div class="col-md-6" style="padding-left: 35px; padding-right: 35px">

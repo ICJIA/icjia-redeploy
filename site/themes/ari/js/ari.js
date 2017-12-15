@@ -1,2 +1,703 @@
-!function e(l,t,a){function i(u,d){if(!t[u]){if(!l[u]){var n="function"==typeof require&&require;if(!d&&n)return n(u,!0);if(o)return o(u,!0);var s=new Error("Cannot find module '"+u+"'");throw s.code="MODULE_NOT_FOUND",s}var r=t[u]={exports:{}};l[u][0].call(r.exports,function(e){var t=l[u][1][e];return i(t?t:e)},r,r.exports,e,l,t,a)}return t[u].exports}for(var o="function"==typeof require&&require,u=0;u<a.length;u++)i(a[u]);return i}({1:[function(e,l,t){"use strict";function a(e,l,t){return l in e?Object.defineProperty(e,l,{value:t,enumerable:!0,configurable:!0,writable:!0}):e[l]=t,e}Object.defineProperty(t,"__esModule",{value:!0});var i={init:function(){return this},highlightSearch:function(){return $(".search").focus().select(),this},addThis:function o(){var o=document.createElement("script");return o.setAttribute("src","//s7.addthis.com/js/300/addthis_widget.js#pubid=cschweda"),document.body.appendChild(o),this},initializeFactsheets:function(){return $(".selectpicker").selectpicker(),$(".selectpicker").on("changed.bs.select",function(e){$(".local-program-description").hide(),$(".factsheet").show();var l=$(".selectpicker option:selected").text(),t=e.target.value;$(".panel-title").html(l),$.ajax(t,{success:function(e){$(".panel-body").html(e)},error:function(e){function l(){return e.apply(this,arguments)}return l.toString=function(){return e.toString()},l}(function(){})})}),this},initializeHomePageMap:function(){function e(){var e=document.querySelectorAll("[data-lorem]");for(var l in e)if(e.hasOwnProperty(l)){var t=new Lorem;t.type="IMG"==e[l].tagName?Lorem.IMAGE:Lorem.TEXT,t.query=e[l].getAttribute("data-lorem"),t.createLorem(e[l])}return this}function l(l){$(".panel-text").html(""),$(".panel-title").html(l.title);_.camelCase(l.title);return $(".panel-text").attr("data-lorem","2p"),e(),this}function t(e,l){var t;return"title"===e&&(t=_.find(s,{title:l})),"id"===e&&(t=_.find(s,{id:l})),t}function i(e){return $(".panel-title").html(e),$(".panel-text").html("Content not defined."),this}var o,u={entityClick:function(e,a){var i=t("id",a.id);$(".local-program-description").hide(),""!=i.displayValue&&($(".selectpicker").selectpicker("val",i.title),l(i),$(".factsheet").show())}},d={color:[{minValue:"0",maxValue:"500",displayValue:"ARI SFY17 sites",color:"#5a53f2"},{minValue:"500",maxValue:"1000",displayValue:"ARI planning grant counties",color:"#2e2a7a"}]},n=(o={caption:"Adult Redeploy Illinois",subCaption:"SFY 2017",captionFontSize:"18",captionFontColor:"#222222",subcaptionFontSize:"14",subcaptionFontColor:"#666666",animation:"0",showBevel:"0",showCanvasBorder:"0",includeValueInLabels:"1",baseFontSize:"9",showToolTip:"1",showLabels:"1",includeNameInLabels:"0",showMarkerLabels:"1",fontBold:"1",hoverColor:"#eeeeee",exportenabled:"0",showexportdatamenuitem:"0",showprintmenuitem:"0",useHoverColor:"1",hoverOnEmpty:"1",borderColor:"#777777",legendPosition:"BOTTOM",legendItemFontSize:"12",legendItemFontColor:"#333333",connectorColor:"#ffffff",fillColor:"#ffffff",showLegend:"1"},a(o,"legendPosition","bottom"),a(o,"baseFontColor","#aaaaaa"),o),s=[{id:"001",displayValue:"AD",value:"500",toolText:"Adams",title:"Adams County"},{id:"003",displayValue:""},{id:"005",displayValue:""},{id:"007",displayValue:"BO",value:"10",toolText:"Boone",title:"Boone County"},{id:"009",displayValue:""},{id:"011",displayValue:""},{id:"013",displayValue:""},{id:"015",displayValue:""},{id:"017",displayValue:""},{id:"019",displayValue:""},{id:"021",displayValue:"CI",value:"10",toolText:"Christian",title:"Christian County"},{id:"023",displayValue:""},{id:"025",displayValue:"CY",value:"500",toolText:"Clay",title:"Clay County"},{id:"027",displayValue:""},{id:"029",displayValue:""},{id:"031",displayValue:"CK",value:"10",toolText:"Cook",title:"Cook County"},{id:"033",displayValue:"CF",value:"10",toolText:"Crawford",title:"Crawford County"},{id:"035",displayValue:""},{id:"037",displayValue:"DE",value:"10",toolText:"DeKalb",title:"DeKalb County"},{id:"039",displayValue:""},{id:"041",displayValue:""},{id:"043",displayValue:"DP",value:"10",toolText:"DuPage",title:"DuPage County"},{id:"045",displayValue:""},{id:"047",displayValue:"EW",value:"10",toolText:"Edwards",title:"Edwards County"},{id:"049",displayValue:"EF",value:"10",toolText:"Effingham",title:"Effingham County"},{id:"051",displayValue:"FA",value:"500",toolText:"Fayette",title:"Fayette County"},{id:"053",displayValue:""},{id:"055",displayValue:"FR",value:"10",toolText:"Franklin",title:"Franklin County"},{id:"057",displayValue:"FU",value:"10",toolText:"Fulton",title:"Fulton County"},{id:"059",displayValue:"GA",value:"10",toolText:"Gallatin",title:"Gallatin County"},{id:"061",displayValue:"GR",value:"500",toolText:"Greene",title:"Greene County"},{id:"063",displayValue:"GU",value:"10",toolText:"Grundy",title:"Grundy County"},{id:"065",displayValue:"HA",value:"10",toolText:"Hamilton",title:"Hamilton County"},{id:"067",displayValue:"HC",value:"10",toolText:"Hancock",title:"Hancock County"},{id:"069",displayValue:"HR",value:"10",toolText:"Hardin",title:"Hardin County"},{id:"071",displayValue:"HE",value:"10",toolText:"Henderson",title:"Henderson County"},{id:"073",displayValue:""},{id:"075",displayValue:""},{id:"077",displayValue:""},{id:"079",displayValue:"JS",value:"500",toolText:"Jasper",title:"Jasper County"},{id:"081",displayValue:"JE",value:"10",toolText:"Jefferson",title:"Jefferson County"},{id:"083",displayValue:"JR",value:"10",toolText:"Jersey",title:"Jersey County"},{id:"085",displayValue:""},{id:"087",displayValue:""},{id:"089",displayValue:""},{id:"091",displayValue:""},{id:"093",displayValue:"KD",value:"10",toolText:"Kendall",title:"Kendall County"},{id:"095",displayValue:"KO",value:"10",toolText:"Knox",title:"Knox County"},{id:"097",displayValue:"LA",value:"10",toolText:"Lake",title:"Lake County"},{id:"099",displayValue:"LS",value:"10",toolText:"LaSalle",title:"LaSalle County"},{id:"101",displayValue:"LW",value:"10",toolText:"Lawrence",title:"Lawrence County"},{id:"103",displayValue:""},{id:"105",displayValue:""},{id:"107",displayValue:""},{id:"109",displayValue:"MD",value:"10",toolText:"McDonough",title:"McDonough County"},{id:"111",displayValue:""},{id:"113",displayValue:"ML",value:"10",toolText:"McLean",title:"McLean County"},{id:"115",displayValue:"MA",value:"10",toolText:"Macon",title:"Macon County"},{id:"117",displayValue:"MP",value:"500",toolText:"Macoupin",title:"Macoupin County"},{id:"119",displayValue:"MI",value:"10",toolText:"Madison",title:"Madison County"},{id:"121",displayValue:""},{id:"123",displayValue:""},{id:"125",displayValue:""},{id:"127",displayValue:""},{id:"129",displayValue:""},{id:"131",displayValue:""},{id:"133",displayValue:"ME",value:"10",toolText:"Monroe",title:"Monroe County"},{id:"135",displayValue:""},{id:"137",displayValue:"MG",value:"500",toolText:"Morgan",title:"Morgan County"},{id:"139",displayValue:""},{id:"141",displayValue:""},{id:"143",displayValue:"PE",value:"10",toolText:"Peoria",title:"Peoria County"},{id:"145",displayValue:"PR",value:"500",toolText:"Perry",title:"Perry County"},{id:"147",displayValue:""},{id:"149",displayValue:""},{id:"151",displayValue:""},{id:"153",displayValue:""},{id:"155",displayValue:""},{id:"157",displayValue:"RA",value:"10",toolText:"Randolph",title:"Randolph County"},{id:"159",displayValue:"RI",value:"10",toolText:"Richland",title:"Richland County"},{id:"161",displayValue:""},{id:"163",displayValue:"SC",value:"10",toolText:"St. Clair",title:"St. Clair County"},{id:"165",displayValue:""},{id:"167",displayValue:"SN",value:"10",toolText:"Sangamon",title:"Sangamon County"},{id:"169",displayValue:""},{id:"171",displayValue:"ST",value:"500",toolText:"Scott",title:"Scott County"},{id:"173",displayValue:""},{id:"175",displayValue:""},{id:"177",displayValue:""},{id:"179",displayValue:""},{id:"181",displayValue:""},{id:"183",displayValue:""},{id:"185",displayValue:"WA",value:"10",toolText:"Wabash",title:"Wabash County"},{id:"187",displayValue:"WR",value:"10",toolText:"Warren",title:"Warren County"},{id:"189",displayValue:"WS",value:"500",toolText:"Washington",title:"Washington County"},{id:"191",displayValue:"WY",value:"10",toolText:"Wayne",title:"Wayne County"},{id:"193",displayValue:"WH",value:"10",toolText:"White",title:"White County"},{id:"195",displayValue:""},{id:"197",displayValue:"WI",value:"10",toolText:"Will",title:"Will County"},{id:"199",displayValue:""},{id:"201",displayValue:"WB",value:"10",toolText:"Winnebago",title:"Winnebago County"},{id:"203",displayValue:""}];$(".factsheet").hide(),$(".selectpicker").selectpicker(),$(".selectpicker").on("changed.bs.select",function(e){$(".local-program-description").hide(),$(".panel-text").html(""),$(".factsheet").show();var a=e.target.value,o=t("title",a);"undefined"==typeof o?i(a):l(o)});var r;FusionCharts.ready(function(){r=new FusionCharts({type:"maps/illinois",renderAt:"chart-container",width:"580",height:"800",dataFormat:"json",events:u,dataSource:{chart:n,colorrange:d,data:s}}).render()})}};t.App=i},{}],2:[function(e,l,t){"use strict";var a=e("./App.js");$(function(){a.App.init().highlightSearch().initializeHomePageMap()})},{"./App.js":1}]},{},[2]);
+(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+var App = {
+
+    init: function init() {
+        var text = "text";
+        console.log('ARI Init');
+        return this;
+    },
+
+    highlightSearch: function highlightSearch() {
+        $(".search").focus().select();
+        return this;
+    },
+
+    addThis: function addThis() {
+        var addThis = document.createElement('script');
+        addThis.setAttribute('src', '//s7.addthis.com/js/300/addthis_widget.js#pubid=cschweda');
+        document.body.appendChild(addThis);
+        return this;
+    },
+
+    initializeFactsheets: function initializeFactsheets() {
+        console.log('Factsheet init');
+        $('.selectpicker').selectpicker();
+        $('.selectpicker').on('changed.bs.select', function (e) {
+            $('.local-program-description').hide();
+            $('.factsheet').show();
+            var siteTitle = $(".selectpicker option:selected").text();
+            var siteURL = e.target.value;
+            $('.panel-title').html(siteTitle);
+            console.log('URL: ', e.target.value);
+            $.ajax(siteURL, {
+                success: function success(data) {
+                    $('.panel-body').html(data);
+                },
+                error: function (_error) {
+                    function error() {
+                        return _error.apply(this, arguments);
+                    }
+
+                    error.toString = function () {
+                        return _error.toString();
+                    };
+
+                    return error;
+                }(function () {
+                    console.log('Error: ', error);
+                })
+            });
+        });
+        return this;
+    },
+    initializeHomePageMap: function initializeHomePageMap() {
+        var _fusionChartObj;
+
+        // Map events
+        var fusionEventsObj = {
+
+            // "entityRollover": function(evt, data) {
+            //     console.log(data.label)
+            // },
+
+            "entityClick": function entityClick(evt, data) {
+                //alert("You have clicked on " + data.label + ". Data ID: " + data.id);
+                //var siteDescriptionLabel = mapCountyToSiteDescription(data.label)
+
+                //var metaData = getCountyMetaDataFromId(data.id);
+                var metaData = getCountyMetaData('id', data.id);
+                $('.local-program-description').hide();
+                //console.log(metaData)
+                if (metaData.displayValue != '') {
+                    //var factsheetURL = '/sites/site-' + metaData.toolText
+                    $('.selectpicker').selectpicker('val', metaData.title);
+                    //var factsheetTitle = metaData.title
+                    loadAjaxFactsheet(metaData);
+                    $('.factsheet').show();
+                }
+            }
+
+            // Map colors
+
+        };var fusionColorRangeObj = {
+            "color": [{
+                "minValue": "0",
+                "maxValue": "500",
+                "displayValue": "ARI SFY17 sites",
+                "color": "#5a53f2"
+
+            }, {
+                "minValue": "500",
+                "maxValue": "1000",
+                "displayValue": "ARI planning grant counties",
+                "color": "#2e2a7a"
+
+            }]
+
+            // Map specs
+        };var fusionChartObj = (_fusionChartObj = {
+            "caption": "Adult Redeploy Illinois",
+            "subCaption": "SFY 2017",
+            "captionFontSize": "18",
+            "captionFontColor": "#222222",
+            "subcaptionFontSize": "14",
+            "subcaptionFontColor": "#666666",
+            "animation": "0",
+            "showBevel": "0",
+            "showCanvasBorder": "0",
+            "includeValueInLabels": "1",
+            "baseFontSize": "9",
+            "showToolTip": "1",
+            "showLabels": "1",
+            "includeNameInLabels": "0",
+            "showMarkerLabels": "1",
+            "fontBold": "1",
+            "hoverColor": "#eeeeee",
+            "exportenabled": "0",
+            "showexportdatamenuitem": "0",
+            "showprintmenuitem": "0",
+            "useHoverColor": "1",
+            "hoverOnEmpty": "1",
+            "borderColor": "#777777",
+            "legendPosition": "BOTTOM",
+            "legendItemFontSize": "12",
+            "legendItemFontColor": "#333333",
+            "connectorColor": "#aaaaaa",
+            "fillColor": "#ffffff",
+            "showLegend": "1"
+        }, _defineProperty(_fusionChartObj, "legendPosition", "bottom"), _defineProperty(_fusionChartObj, "baseFontColor", "#aaaaaa"), _fusionChartObj);
+
+        // County metadata
+        var mapMetaData = [{
+            "id": "001",
+            "displayValue": "AD",
+            "value": "500",
+            "toolText": "Adams",
+            "title": "Adams County"
+        }, {
+            "id": "003",
+            "displayValue": ""
+        }, {
+            "id": "005",
+            "displayValue": ""
+        }, {
+            "id": "007",
+            "displayValue": "BO",
+            "value": "10",
+            "toolText": "Boone",
+            "title": "Boone County"
+        }, {
+            "id": "009",
+            "displayValue": ""
+        }, {
+            "id": "011",
+            "displayValue": ""
+        }, {
+            "id": "013",
+            "displayValue": ""
+        }, {
+            "id": "015",
+            "displayValue": ""
+        }, {
+            "id": "017",
+            "displayValue": ""
+        }, {
+            "id": "019",
+            "displayValue": ""
+        }, {
+            "id": "021",
+            "displayValue": "CI",
+            "value": "10",
+            "toolText": "Christian",
+            "title": "Christian County"
+        }, {
+            "id": "023",
+            "displayValue": ""
+        }, {
+            "id": "025",
+            "displayValue": "CY",
+            "value": "500",
+            "toolText": "Clay",
+            "title": "Clay County"
+        }, {
+            "id": "027",
+            "displayValue": ""
+        }, {
+            "id": "029",
+            "displayValue": ""
+        }, {
+            "id": "031",
+            "displayValue": "CK",
+            "value": "10",
+            "toolText": "Cook",
+            "title": "Cook County"
+        }, {
+            "id": "033",
+            "displayValue": "CF",
+            "value": "10",
+            "toolText": "Crawford",
+            "title": "Crawford County"
+        }, {
+            "id": "035",
+            "displayValue": ""
+        }, {
+            "id": "037",
+            "displayValue": "DE",
+            "value": "10",
+            "toolText": "DeKalb",
+            "title": "DeKalb County"
+        }, {
+            "id": "039",
+            "displayValue": ""
+        }, {
+            "id": "041",
+            "displayValue": ""
+        }, {
+            "id": "043",
+            "displayValue": "DP",
+            "value": "10",
+            "toolText": "DuPage",
+            "title": "DuPage County"
+        }, {
+            "id": "045",
+            "displayValue": ""
+        }, {
+            "id": "047",
+            "displayValue": "EW",
+            "value": "10",
+            "toolText": "Edwards",
+            "title": "Edwards County"
+        }, {
+            "id": "049",
+            "displayValue": "EF",
+            "value": "10",
+            "toolText": "Effingham",
+            "title": "Effingham County"
+        }, {
+            "id": "051",
+            "displayValue": "FA",
+            "value": "500",
+            "toolText": "Fayette",
+            "title": "Fayette County"
+        }, {
+            "id": "053",
+            "displayValue": ""
+        }, {
+            "id": "055",
+            "displayValue": "FR",
+            "value": "10",
+            "toolText": "Franklin",
+            "title": "Franklin County"
+        }, {
+            "id": "057",
+            "displayValue": "FU",
+            "value": "10",
+            "toolText": "Fulton",
+            "title": "Fulton County"
+        }, {
+            "id": "059",
+            "displayValue": "GA",
+            "value": "10",
+            "toolText": "Gallatin",
+            "title": "Gallatin County"
+        }, {
+            "id": "061",
+            "displayValue": "GR",
+            "value": "500",
+            "toolText": "Greene",
+            "title": "Greene County"
+        }, {
+            "id": "063",
+            "displayValue": "GU",
+            "value": "10",
+            "toolText": "Grundy",
+            "title": "Grundy County"
+        }, {
+            "id": "065",
+            "displayValue": "HA",
+            "value": "10",
+            "toolText": "Hamilton",
+            "title": "Hamilton County"
+        }, {
+            "id": "067",
+            "displayValue": "HC",
+            "value": "10",
+            "toolText": "Hancock",
+            "title": "Hancock County"
+        }, {
+            "id": "069",
+            "displayValue": "HR",
+            "value": "10",
+            "toolText": "Hardin",
+            "title": "Hardin County"
+        }, {
+            "id": "071",
+            "displayValue": "HE",
+            "value": "10",
+            "toolText": "Henderson",
+            "title": "Henderson County"
+        }, {
+            "id": "073",
+            "displayValue": ""
+        }, {
+            "id": "075",
+            "displayValue": ""
+        }, {
+            "id": "077",
+            "displayValue": ""
+        }, {
+            "id": "079",
+            "displayValue": "JS",
+            "value": "500",
+            "toolText": "Jasper",
+            "title": "Jasper County"
+        }, {
+            "id": "081",
+            "displayValue": "JE",
+            "value": "10",
+            "toolText": "Jefferson",
+            "title": "Jefferson County"
+        }, {
+            "id": "083",
+            "displayValue": "JR",
+            "value": "10",
+            "toolText": "Jersey",
+            "title": "Jersey County"
+        }, {
+            "id": "085",
+            "displayValue": ""
+        }, {
+            "id": "087",
+            "displayValue": ""
+        }, {
+            "id": "089",
+            "displayValue": ""
+        }, {
+            "id": "091",
+            "displayValue": ""
+        }, {
+            "id": "093",
+            "displayValue": "KD",
+            "value": "10",
+            "toolText": "Kendall",
+            "title": "Kendall County"
+        }, {
+            "id": "095",
+            "displayValue": "KO",
+            "value": "10",
+            "toolText": "Knox",
+            "title": "Knox County"
+        }, {
+            "id": "097",
+            "displayValue": "LA",
+            "value": "10",
+            "toolText": "Lake",
+            "title": "Lake County"
+        }, {
+            "id": "099",
+            "displayValue": "LS",
+            "value": "10",
+            "toolText": "LaSalle",
+            "title": "LaSalle County"
+        }, {
+            "id": "101",
+            "displayValue": "LW",
+            "value": "10",
+            "toolText": "Lawrence",
+            "title": "Lawrence County"
+        }, {
+            "id": "103",
+            "displayValue": ""
+        }, {
+            "id": "105",
+            "displayValue": ""
+        }, {
+            "id": "107",
+            "displayValue": ""
+        }, {
+            "id": "109",
+            "displayValue": "MD",
+            "value": "10",
+            "toolText": "McDonough",
+            "title": "McDonough County"
+        }, {
+            "id": "111",
+            "displayValue": ""
+        }, {
+            "id": "113",
+            "displayValue": "ML",
+            "value": "10",
+            "toolText": "McLean",
+            "title": "McLean County"
+        }, {
+            "id": "115",
+            "displayValue": "MA",
+            "value": "10",
+            "toolText": "Macon",
+            "title": "Macon County"
+        }, {
+            "id": "117",
+            "displayValue": "MP",
+            "value": "500",
+            "toolText": "Macoupin",
+            "title": "Macoupin County"
+        }, {
+            "id": "119",
+            "displayValue": "MI",
+            "value": "10",
+            "toolText": "Madison",
+            "title": "Madison County"
+        }, {
+            "id": "121",
+            "displayValue": ""
+        }, {
+            "id": "123",
+            "displayValue": ""
+        }, {
+            "id": "125",
+            "displayValue": ""
+        }, {
+            "id": "127",
+            "displayValue": ""
+        }, {
+            "id": "129",
+            "displayValue": ""
+        }, {
+            "id": "131",
+            "displayValue": ""
+        }, {
+            "id": "133",
+            "displayValue": "ME",
+            "value": "10",
+            "toolText": "Monroe",
+            "title": "Monroe County"
+        }, {
+            "id": "135",
+            "displayValue": ""
+        }, {
+            "id": "137",
+            "displayValue": "MG",
+            "value": "500",
+            "toolText": "Morgan",
+            "title": "Morgan County"
+        }, {
+            "id": "139",
+            "displayValue": ""
+        }, {
+            "id": "141",
+            "displayValue": ""
+        }, {
+            "id": "143",
+            "displayValue": "PE",
+            "value": "10",
+            "toolText": "Peoria",
+            "title": "Peoria County"
+        }, {
+            "id": "145",
+            "displayValue": "PR",
+            "value": "500",
+            "toolText": "Perry",
+            "title": "Perry County"
+        }, {
+            "id": "147",
+            "displayValue": ""
+        }, {
+            "id": "149",
+            "displayValue": ""
+        }, {
+            "id": "151",
+            "displayValue": ""
+        }, {
+            "id": "153",
+            "displayValue": ""
+        }, {
+            "id": "155",
+            "displayValue": ""
+        }, {
+            "id": "157",
+            "displayValue": "RA",
+            "value": "10",
+            "toolText": "Randolph",
+            "title": "Randolph County"
+        }, {
+            "id": "159",
+            "displayValue": "RI",
+            "value": "10",
+            "toolText": "Richland",
+            "title": "Richland County"
+        }, {
+            "id": "161",
+            "displayValue": ""
+        }, {
+            "id": "163",
+            "displayValue": "SC",
+            "value": "10",
+            "toolText": "St. Clair",
+            "title": "St. Clair County"
+        }, {
+            "id": "165",
+            "displayValue": ""
+        }, {
+            "id": "167",
+            "displayValue": "SN",
+            "value": "10",
+            "toolText": "Sangamon",
+            "title": "Sangamon County"
+        }, {
+            "id": "169",
+            "displayValue": ""
+        }, {
+            "id": "171",
+            "displayValue": "ST",
+            "value": "500",
+            "toolText": "Scott",
+            "title": "Scott County"
+        }, {
+            "id": "173",
+            "displayValue": ""
+        }, {
+            "id": "175",
+            "displayValue": ""
+        }, {
+            "id": "177",
+            "displayValue": ""
+        }, {
+            "id": "179",
+            "displayValue": ""
+        }, {
+            "id": "181",
+            "displayValue": ""
+        }, {
+            "id": "183",
+            "displayValue": ""
+        }, {
+            "id": "185",
+            "displayValue": "WA",
+            "value": "10",
+            "toolText": "Wabash",
+            "title": "Wabash County"
+        }, {
+            "id": "187",
+            "displayValue": "WR",
+            "value": "10",
+            "toolText": "Warren",
+            "title": "Warren County"
+        }, {
+            "id": "189",
+            "displayValue": "WS",
+            "value": "500",
+            "toolText": "Washington",
+            "title": "Washington County"
+        }, {
+            "id": "191",
+            "displayValue": "WY",
+            "value": "10",
+            "toolText": "Wayne",
+            "title": "Wayne County"
+        }, {
+            "id": "193",
+            "displayValue": "WH",
+            "value": "10",
+            "toolText": "White",
+            "title": "White County"
+        }, {
+            "id": "195",
+            "displayValue": ""
+        }, {
+            "id": "197",
+            "displayValue": "WI",
+            "value": "10",
+            "toolText": "Will",
+            "title": "Will County"
+        }, {
+            "id": "199",
+            "displayValue": ""
+        }, {
+            "id": "201",
+            "displayValue": "WB",
+            "value": "10",
+            "toolText": "Winnebago",
+            "title": "Winnebago County"
+        }, {
+            "id": "203",
+            "displayValue": ""
+        }];
+
+        /* ***********************************************
+         Map Functions
+         ************************************************* */
+
+        function generateLorumIpsum() {
+            var els = document.querySelectorAll('[data-lorem]');
+            for (var i in els) {
+                if (els.hasOwnProperty(i)) {
+                    var lorem = new Lorem();
+                    lorem.type = els[i].tagName == 'IMG' ? Lorem.IMAGE : Lorem.TEXT;
+                    lorem.query = els[i].getAttribute('data-lorem');
+                    lorem.createLorem(els[i]);
+                }
+            }
+            return this;
+        }
+
+        function loadAjaxFactsheet(metaDataObj) {
+            $('.panel-text').html('');
+            $('.panel-title').html(metaDataObj.title);
+            var factSheetUrl = _.camelCase(metaDataObj.title);
+            // $(".panel-title").after(function() {
+            //     return "<div id='litext' data-lorem='2p'></div>";
+            // });
+            $('.panel-text').attr('data-lorem', '2p');
+            generateLorumIpsum();
+            console.log('Load AJAX factsheet from: ', factSheetUrl);
+            return this;
+        }
+
+        function getCountyMetaData(key, value) {
+            var myObj;
+            if (key === 'title') {
+                myObj = _.find(mapMetaData, { 'title': value });
+            }
+            if (key === 'id') {
+                myObj = _.find(mapMetaData, { 'id': value });
+            }
+
+            return myObj;
+        }
+
+        function displayErrorMessage(e) {
+            $('.panel-title').html(e);
+            $('.panel-text').html('Content not defined.');
+            return this;
+        }
+
+        $('.factsheet').hide();
+
+        $('.selectpicker').selectpicker();
+        //$('.selectpicker').selectpicker('val', '/sites/site-002');
+        $('.selectpicker').on('changed.bs.select', function (e) {
+            //var factsheetTitle = $(".selectpicker option:selected").text()
+            $('.local-program-description').hide();
+            $('.panel-text').html('');
+            $('.factsheet').show();
+            var factsheetTitle = e.target.value;
+            //console.log($(".selectpicker option:selected").text())
+            //console.log(factsheetTitle)
+            //var o = getCountyMetaDataFromTitle(factsheetTitle)
+            var o = getCountyMetaData('title', factsheetTitle);
+            console.log(o);
+            if (typeof o === "undefined") {
+                displayErrorMessage(factsheetTitle);
+            } else {
+                loadAjaxFactsheet(o);
+            }
+        });
+
+        // Render Fusion Map
+
+
+        var ariMap;
+        FusionCharts.ready(function () {
+            ariMap = new FusionCharts({
+                type: 'maps/illinois',
+                renderAt: 'chart-container',
+                width: '580',
+                height: '800',
+                dataFormat: 'json',
+                "events": fusionEventsObj,
+                dataSource: {
+                    "chart": fusionChartObj,
+                    "colorrange": fusionColorRangeObj,
+                    "data": mapMetaData
+                }
+            }).render();
+
+            //ariMap.resizeTo(700, 700).render();
+
+        });
+    }
+
+};
+
+exports.App = App;
+
+},{}],2:[function(require,module,exports){
+'use strict';
+
+var _App = require('./App.js');
+
+$(function () {
+    _App.App.init().highlightSearch().initializeHomePageMap();
+});
+
+},{"./App.js":1}]},{},[2]);
+
 //# sourceMappingURL=ari.js.map

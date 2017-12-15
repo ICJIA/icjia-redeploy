@@ -119,7 +119,7 @@ const App = {
             "legendPosition": "BOTTOM",
             "legendItemFontSize": "12",
             "legendItemFontColor": "#333333",
-            "connectorColor": "#ffffff",
+            "connectorColor": "#aaaaaa",
             "fillColor": "#ffffff",
             "showLegend": "1",
             "legendPosition": "bottom",
