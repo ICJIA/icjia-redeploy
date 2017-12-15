@@ -20,7 +20,7 @@ elixir.config.sourcemaps = true;
 elixir(function(mix) {
     mix.sass(theme + '.scss', 'css/' + theme + '.css');
 
-    // mix.browserify('./js/app/index.js', './js/ari.js')
+    mix.browserify('./js/app/index.js', './js/ari.js')
     mix.browserSync({
         proxy: 'redeploy'
     });

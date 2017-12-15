@@ -1,50 +1,66 @@
+(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 var App = {
 
-
-    init: function() {
-        var text = "text"
-        console.log('ARI Init')
-        return this
+    init: function init() {
+        var text = "text";
+        console.log('ARI Init');
+        return this;
     },
 
-
-    highlightSearch: function() {
+    highlightSearch: function highlightSearch() {
         $(".search").focus().select();
-        return this
+        return this;
     },
 
-    addThis: function() {
+    addThis: function addThis() {
         var addThis = document.createElement('script');
         addThis.setAttribute('src', '//s7.addthis.com/js/300/addthis_widget.js#pubid=cschweda');
         document.body.appendChild(addThis);
-        return this
+        return this;
     },
 
-    initializeFactsheets: function() {
-        console.log('Factsheet init')
+    initializeFactsheets: function initializeFactsheets() {
+        console.log('Factsheet init');
         $('.selectpicker').selectpicker();
-        $('.selectpicker').on('changed.bs.select', function(e) {
-            $('.local-program-description').hide()
+        $('.selectpicker').on('changed.bs.select', function (e) {
+            $('.local-program-description').hide();
             $('.factsheet').show();
-            var siteTitle = $(".selectpicker option:selected").text()
-            var siteURL = e.target.value
-            $('.panel-title').html(siteTitle)
-            console.log('URL: ', e.target.value)
+            var siteTitle = $(".selectpicker option:selected").text();
+            var siteURL = e.target.value;
+            $('.panel-title').html(siteTitle);
+            console.log('URL: ', e.target.value);
             $.ajax(siteURL, {
-                success: function(data) {
-                    $('.panel-body').html(data)
+                success: function success(data) {
+                    $('.panel-body').html(data);
                 },
-                error: function() {
-                    console.log('Error: ', error)
-                }
+                error: function (_error) {
+                    function error() {
+                        return _error.apply(this, arguments);
+                    }
+
+                    error.toString = function () {
+                        return _error.toString();
+                    };
+
+                    return error;
+                }(function () {
+                    console.log('Error: ', error);
+                })
             });
-
-
         });
-        return this
-
+        return this;
     },
-    initializeHomePageMap: function() {
+    initializeHomePageMap: function initializeHomePageMap() {
+        var _fusionChartObj;
+
         // Map events
         var fusionEventsObj = {
 
@@ -52,46 +68,41 @@ var App = {
             //     console.log(data.label)
             // },
 
-            "entityClick": function(evt, data) {
+            "entityClick": function entityClick(evt, data) {
                 //alert("You have clicked on " + data.label + ". Data ID: " + data.id);
                 //var siteDescriptionLabel = mapCountyToSiteDescription(data.label)
 
                 //var metaData = getCountyMetaDataFromId(data.id);
-                var metaData = getCountyMetaData('id', data.id)
-                console.log(metaData)
+                var metaData = getCountyMetaData('id', data.id);
+                console.log(metaData);
                 if (metaData.displayValue != '') {
                     //var factsheetURL = '/sites/site-' + metaData.toolText
                     $('.selectpicker').selectpicker('val', metaData.title);
                     //var factsheetTitle = metaData.title
-                    loadAjaxFactsheet(metaData)
+                    loadAjaxFactsheet(metaData);
                     $('.factsheet').show();
-
                 }
-            },
-        }
+            }
 
-        // Map colors
+            // Map colors
 
-        var fusionColorRangeObj = {
+        };var fusionColorRangeObj = {
             "color": [{
-                    "minValue": "0",
-                    "maxValue": "500",
-                    "displayValue": "ARI SFY17 sites",
-                    "color": "#5a53f2"
+                "minValue": "0",
+                "maxValue": "500",
+                "displayValue": "ARI SFY17 sites",
+                "color": "#5a53f2"
 
-                }, {
-                    "minValue": "500",
-                    "maxValue": "1000",
-                    "displayValue": "ARI planning grant counties",
-                    "color": "#2e2a7a"
+            }, {
+                "minValue": "500",
+                "maxValue": "1000",
+                "displayValue": "ARI planning grant counties",
+                "color": "#2e2a7a"
 
-                },
+            }]
 
-            ]
-        }
-
-        // Map specs
-        var fusionChartObj = {
+            // Map specs
+        };var fusionChartObj = (_fusionChartObj = {
             "caption": "Adult Redeploy Illinois",
             "subCaption": "SFY 2017",
             "captionFontSize": "18",
@@ -120,10 +131,8 @@ var App = {
             "legendItemFontColor": "#333333",
             "connectorColor": "#ffffff",
             "fillColor": "#ffffff",
-            "showLegend": "1",
-            "legendPosition": "bottom",
-            "baseFontColor": "#aaaaaa"
-        }
+            "showLegend": "1"
+        }, _defineProperty(_fusionChartObj, "legendPosition", "bottom"), _defineProperty(_fusionChartObj, "baseFontColor", "#aaaaaa"), _fusionChartObj);
 
         // County metadata
         var mapMetaData = [{
@@ -579,43 +588,40 @@ var App = {
         }, {
             "id": "203",
             "displayValue": ""
-        }]
+        }];
 
         /* ***********************************************
-    
-            Map Functions
-    
-            ************************************************* */
+         Map Functions
+         ************************************************* */
 
         function generateLorumIpsum() {
             var els = document.querySelectorAll('[data-lorem]');
             for (var i in els) {
                 if (els.hasOwnProperty(i)) {
-                    var lorem = new Lorem;
+                    var lorem = new Lorem();
                     lorem.type = els[i].tagName == 'IMG' ? Lorem.IMAGE : Lorem.TEXT;
                     lorem.query = els[i].getAttribute('data-lorem');
                     lorem.createLorem(els[i]);
                 }
             }
-            return this
+            return this;
         }
 
         function loadAjaxFactsheet(metaDataObj) {
-            $('.panel-text').html('')
-            $('.panel-title').html(metaDataObj.title)
-            var factSheetUrl = _.camelCase(metaDataObj.title)
-                // $(".panel-title").after(function() {
-                //     return "<div id='litext' data-lorem='2p'></div>";
-                // });
-            $('.panel-text').attr('data-lorem', '2p')
+            $('.panel-text').html('');
+            $('.panel-title').html(metaDataObj.title);
+            var factSheetUrl = _.camelCase(metaDataObj.title);
+            // $(".panel-title").after(function() {
+            //     return "<div id='litext' data-lorem='2p'></div>";
+            // });
+            $('.panel-text').attr('data-lorem', '2p');
             generateLorumIpsum();
-            console.log('Load AJAX factsheet from: ', factSheetUrl)
-            return this
+            console.log('Load AJAX factsheet from: ', factSheetUrl);
+            return this;
         }
 
-
         function getCountyMetaData(key, value) {
-            var myObj
+            var myObj;
             if (key === 'title') {
                 myObj = _.find(mapMetaData, { 'title': value });
             }
@@ -623,21 +629,19 @@ var App = {
                 myObj = _.find(mapMetaData, { 'id': value });
             }
 
-            return myObj
+            return myObj;
         }
-
 
         function displayErrorMessage(e) {
             $('.panel-title').html(e);
-            $('.panel-text').html('Content not defined.')
-            return this
+            $('.panel-text').html('Content not defined.');
+            return this;
         }
-
 
         $('.factsheet').hide();
         $('.selectpicker').selectpicker();
         //$('.selectpicker').selectpicker('val', '/sites/site-002');
-        $('.selectpicker').on('changed.bs.select', function(e) {
+        $('.selectpicker').on('changed.bs.select', function (e) {
             //var factsheetTitle = $(".selectpicker option:selected").text()
             $('.panel-text').html('');
             $('.factsheet').show();
@@ -645,23 +649,20 @@ var App = {
             //console.log($(".selectpicker option:selected").text())
             //console.log(factsheetTitle)
             //var o = getCountyMetaDataFromTitle(factsheetTitle)
-            var o = getCountyMetaData('title', factsheetTitle)
-            console.log(o)
+            var o = getCountyMetaData('title', factsheetTitle);
+            console.log(o);
             if (typeof o === "undefined") {
-                displayErrorMessage(factsheetTitle)
+                displayErrorMessage(factsheetTitle);
             } else {
-                loadAjaxFactsheet(o)
+                loadAjaxFactsheet(o);
             }
-
-
         });
-
 
         // Render Fusion Map
 
 
         var ariMap;
-        FusionCharts.ready(function() {
+        FusionCharts.ready(function () {
             ariMap = new FusionCharts({
                 type: 'maps/illinois',
                 renderAt: 'chart-container',
@@ -672,28 +673,28 @@ var App = {
                 dataSource: {
                     "chart": fusionChartObj,
                     "colorrange": fusionColorRangeObj,
-                    "data": mapMetaData,
+                    "data": mapMetaData
                 }
             }).render();
 
             //ariMap.resizeTo(700, 700).render();
 
-
         });
-
-
-
-
-
-
     }
 
-}
+};
 
+exports.App = App;
 
-$(function() {
-    App.init()
-        .highlightSearch()
-        .initializeHomePageMap()
+},{}],2:[function(require,module,exports){
+'use strict';
 
+var _App = require('./App.js');
+
+$(function () {
+    _App.App.init().highlightSearch().initializeHomePageMap();
 });
+
+},{"./App.js":1}]},{},[2]);
+
+//# sourceMappingURL=ari.js.map
