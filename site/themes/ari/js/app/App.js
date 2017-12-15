@@ -58,7 +58,8 @@ const App = {
 
                 //var metaData = getCountyMetaDataFromId(data.id);
                 var metaData = getCountyMetaData('id', data.id)
-                console.log(metaData)
+                $('.local-program-description').hide();
+                //console.log(metaData)
                 if (metaData.displayValue != '') {
                     //var factsheetURL = '/sites/site-' + metaData.toolText
                     $('.selectpicker').selectpicker('val', metaData.title);
@@ -635,10 +636,12 @@ const App = {
 
 
         $('.factsheet').hide();
+
         $('.selectpicker').selectpicker();
         //$('.selectpicker').selectpicker('val', '/sites/site-002');
         $('.selectpicker').on('changed.bs.select', function(e) {
             //var factsheetTitle = $(".selectpicker option:selected").text()
+            $('.local-program-description').hide();
             $('.panel-text').html('');
             $('.factsheet').show();
             var factsheetTitle = e.target.value;
