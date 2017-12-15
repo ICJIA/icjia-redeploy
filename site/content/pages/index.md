@@ -126,7 +126,7 @@ community-based supervision/services!</h4>
 
 <!-- About / Map -->
 
-<div class="container" style="background: #fff; padding-top: 50px; padding-bottom: 50px">
+<!-- <div class="container" style="background: #fff; padding-top: 50px; padding-bottom: 50px">
 
   <div class="row is-flex welcome-photo">
     
@@ -186,7 +186,58 @@ community-based supervision/services!</h4>
 
   </div>
 
-</div>
+</div> -->
+
+
+
+
+ <section>
+  <div style="background: #fff; border-top: 1px solid #bbb;border-bottom: 1px solid #bbb;">
+        <div class="container-fluid" style="padding: 50px 30px 50px 30px">
+            <div class="row">
+                <div class="col-md-6 hidden-xs hidden-sm">
+                    <div id="chart-container">Map will load here!</div>
+                </div>
+                <div class="col-md-6">
+                    <div class="text-center">
+                        <div style="color: #aaa; font-family: 'Lato', sans-serif; font-weight: 900; margin-bottom: 15px; margin-top: 20px;">Display ARI Fact Sheet</div>
+<select class="selectpicker" style="font-size: 14px; font-family: 'Lato', sans-serif !important" title="Choose one of the following...">
+                        <optgroup label="Adult Redeploy Illinois Sites" style="font-family: 'Lato', sans-serif !important;">
+                        
+<option value="2nd Judicial Circuit">2nd Judicial Circuit</option>
+                        <option value="Boone County">Boone County</option>
+                        <option value="Cook County">Cook County</option>
+                        <option value="DuPage County">DuPage County</option>
+                            
+                          
+  </optgroup>
+                        
+</select>
+      </div>
+
+
+
+  <div class="panel panel-default factsheet" style="margin-top: 30px">
+                        <div class="panel-heading">
+                            <div class="panel-title" style="font-weight: 900; text-transform: uppercase"></div>
+                        </div>
+                        <div class="panel-body">
+                            <div class="panel-text"></div>
+                        </div>
+                    </div>
+
+
+
+  </div>
+            </div>
+        </div>
+    </div>
+
+  </section>
+
+
+
+
 
 <section style="background: #eee; border-top: 1px solid #aaa;">
 <div class="container-fluid" style=" padding-top: 50px; padding-bottom: 50px">
@@ -277,6 +328,8 @@ community-based supervision/services!</h4>
   </div>
 
   </section>
+
+ 
 
   
 
