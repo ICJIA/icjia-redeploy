@@ -1,7 +1,7 @@
 ---
 is_hidden: true
 title: Adult Redeploy Illinois Home
-splash: /assets/img/ari-splash-08.jpg
+splash: /assets/img/ari-splash-09.jpg
 short_description: |
   The Targeted Violence Prevention Program makes outside research on targeted violence prevention and countering
   violent extremism more accessible to community-based and faith-based organizations. TVPP can also partner with
