@@ -1,4 +1,5 @@
 ---
+is_hidden: true
 title: Adult Redeploy Illinois Home
 splash: /assets/img/ari-splash-04.jpg
 short_description: |
@@ -56,16 +57,16 @@ id: db0ae4e3-4f10-4802-bc40-0b880cbf02c7
 <div class="homeHero hidden-sm hidden-xs" {{if get:splash}}style="background-image: url('/assets/img/ari-splash-0{{get:splash}}.jpg');"{{else}}style="background-image: url({{splash}});"{{/if}}>
   <div class="homeHeader">
     <h3> Adult Redeploy Illinois</h3>
-    <h4> Diverting non-violent offenders from prison to more effective and less expensive
-community-based supervision and services</h4>
+    <h4> Diverting non-violent offenders from prison to more effective, and less expensive,
+community-based supervision/services!</h4>
   </div>
 </div>
 
 <div style="background: #eee" class="homeHero mobile hidden-md hidden-lg">
   <div class="text-center">
     <h3> Adult Rededeploy Illinois</h3>
-    <h4> Diverting non-violent offenders from prison to more effective and less expensive
-community-based supervision and services</h4>
+    <h4> Diverting non-violent offenders from prison to more effective, and less expensive,
+community-based supervision/services!</h4>
   </div>
 </div> 
 
@@ -194,7 +195,7 @@ community-based supervision and services</h4>
  <h1 class="h3" style=" ">About Adult Redeploy Illinois</h1>
             <p>ARI was established by the <a href="http://www.ilga.gov/legislation/publicacts/fulltext.asp?Name=096-0761">Crime Reduction Act</a> (Public Act 96-0761) to provide financial incentives to local jurisdictions for programs that allow diversion of non-violent offenders from state prisons by providing community-based services. Grants are provided to counties, groups of counties, and judicial circuits to increase programming in their areas, in exchange for reducing the number of people they send to the Illinois Department of Corrections.</p>
 
-<p>The Crime Reduction Act is based on the premise that crime can be reduced and the costs of the criminal justice system can be controlled by understanding and addressing the reasons *why* people commit crimes. It is also based on the premise that local jurisdictions (judicial circuits or counties) know best what resources are necessary to reduce crime. Rigorous evaluation processes with standardized performance measurements are required to confirm the effectiveness of services in reducing crime. </p>
+<p>The Crime Reduction Act is based on the premise that crime can be reduced and the costs of the criminal justice system can be controlled by understanding and addressing the reasons why people commit crimes. It is also based on the premise that local jurisdictions (judicial circuits or counties) know best what resources are necessary to reduce crime. Rigorous evaluation processes with standardized performance measurements are required to confirm the effectiveness of services in reducing crime. </p>
 
 <p>The ARI program is an example of a national best practice called <strong>"performance incentive funding,"</strong> which other states are adopting in different ways. ARI is based on the successful juvenile model which has been operating since 2004 with positive results. In the first three years of the juvenile Redeploy Illinois program, four pilot sites reduced the number of youth sent to the Department of Juvenile Justice by 51 percent (well above the 25 percent goal), which represents potential youth incarceration cost avoidance to the state of nearly $19 million. </p>
 
