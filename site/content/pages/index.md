@@ -269,7 +269,7 @@ community-based supervision/services!</h4>
  <div class="col-md-6" style="padding-left: 35px; padding-right: 35px">
  <h1 class="h2">ARI News & Updates</h1>
   <article class="list">
-          {{ collection:news limit="5" scope="tag" sort="date:desc"}} 
+          {{ collection:news limit="4" scope="tag" sort="date:desc"}} 
           
             {{ partial:block }}
           
