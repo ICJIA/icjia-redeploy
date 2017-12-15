@@ -71,7 +71,7 @@ community-based supervision/services!</h4>
 </div> 
 
 <!-- hoverBoxes -->
-<div class="container-fluid fullscreen hidden-xs hidden-sm">
+<!-- <div class="container-fluid fullscreen hidden-xs hidden-sm">
 
 <div class="row is-flex">
 
@@ -121,7 +121,7 @@ community-based supervision/services!</h4>
     
   
 </div>
-</div> 
+</div>  -->
 
 
 <!-- About / Map -->
