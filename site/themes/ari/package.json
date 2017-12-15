@@ -1,6 +1,6 @@
 {
     "name": "icjia-redeploy",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "private": true,
     "scripts": {
         "build:css": "node-sass --source-map true --output-style compressed --include-path scss sass/ari.scss   css/ari.css",
