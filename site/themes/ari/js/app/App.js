@@ -665,7 +665,7 @@ const App = {
             ariMap = new FusionCharts({
                 type: 'maps/illinois',
                 renderAt: 'chart-container',
-                width: '800',
+                width: '580',
                 height: '800',
                 dataFormat: 'json',
                 "events": fusionEventsObj,
