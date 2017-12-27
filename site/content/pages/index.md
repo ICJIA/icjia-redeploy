@@ -142,7 +142,7 @@ community-based supervision/services!</h4>
 
 <section style="margin-top: -45px">
 <div style="background: #fff;">
-        <div class="container-fluid" style="padding: 75px 30px 50px 30px">
+        <div class="container" style="padding: 75px 30px 50px 30px">
             <div class="row">
                 <div class="col-md-12">
                 <h1 class="h2" style="padding-bottom: 12px; border-bottom: 1px solid #ddd;">About Adult Redeploy Illinois</h1>
@@ -164,7 +164,7 @@ community-based supervision/services!</h4>
 </section>
 
 
- <section style="margin-top: -20px;">
+ <section style="padding-top: 30px; border-top: 1px solid #eee">
   <div style="background: #ffffff;">
         <div class="container-fluid" style="padding: 0px 30px 50px 30px">
             <div class="row">
