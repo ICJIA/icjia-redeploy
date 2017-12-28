@@ -12,6 +12,7 @@ template: home/index
 fieldset: home
 id: db0ae4e3-4f10-4802-bc40-0b880cbf02c7
 ---
+
 <style>
   .bootstrap-select {
     font-family: 'Lato', sans-serif;
@@ -65,6 +66,7 @@ id: db0ae4e3-4f10-4802-bc40-0b880cbf02c7
 </style>
 
 <!-- Splash image -->
+
 <div class="homeHero hidden-sm hidden-xs" {{if get:splash}}style="background-image: url('/assets/img/ari-splash-0{{get:splash}}.jpg');"{{else}}style="background-image: url({{splash}});"{{/if}}>
   <div class="homeHeader">
     <h3> Adult Redeploy Illinois</h3>
@@ -79,7 +81,7 @@ community-based supervision/services!</h4>
     <h4> Diverting non-violent offenders from prison to more effective, and less expensive,
 community-based supervision/services!</h4>
   </div>
-</div> 
+</div>
 
 <!-- <section style="margin-top: 0px;" class="hidden-xs hidden-sm">
 <div class="container-fluid">
@@ -138,8 +140,6 @@ community-based supervision/services!</h4>
 </div>
 </section> -->
 
-
-
 <section style="margin-top: -45px">
 <div style="background: #fff;">
         <div class="container" style="padding: 75px 30px 50px 30px">
@@ -158,13 +158,9 @@ community-based supervision/services!</h4>
             </div>
             </div>
 
-
-
-
 </section>
 
-
- <section style="padding-top: 30px; border-top: 1px solid #eee">
+ <!-- <section style="padding-top: 30px; border-top: 1px solid #eee">
   <div style="background: #ffffff;">
         <div class="container-fluid" style="padding: 0px 30px 50px 30px">
             <div class="row">
@@ -209,11 +205,9 @@ community-based supervision/services!</h4>
         </div>
     </div>
 
-  </section>
+  </section> -->
 
-
-
-
+  <div id="Illinois" class="__vue-root"></div>
 
 <section style="background: #eee; border-top: 1px solid #aaa; border-bottom: 1px solid #aaa;">
 <div class="container-fluid" style=" padding-top: 50px; padding-bottom: 50px">
@@ -228,10 +222,7 @@ community-based supervision/services!</h4>
           {{ /collection:news }}
    </article>
 
-
-
 </div>
-
 
 <div class="col-md-6" style="padding-left: 35px; padding-right: 35px">
 
@@ -254,32 +245,18 @@ community-based supervision/services!</h4>
      {{/if}}
      {{/if}}
 
-  
-          
+
+
         {{ /collection:events }}
-    
-   
+
 </article>
   </div>
 
 </div>
 
-
 </div>
-
-
 
   </div>
   </div>
 
   </section>
-
- 
-
-  
-
-
-
-
-
-
