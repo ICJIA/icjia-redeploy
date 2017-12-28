@@ -206,7 +206,7 @@ id: db0ae4e3-4f10-4802-bc40-0b880cbf02c7
  <div class="col-md-6" style="padding-left: 35px; padding-right: 35px">
  <h1 class="h2">ARI News & Updates</h1>
   <article class="list">
-          {{ collection:news limit="4" scope="tag" sort="date:desc"}} 
+          {{ collection:news limit="3" scope="tag" sort="date:desc"}} 
           
             {{ partial:block }}
           
