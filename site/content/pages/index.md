@@ -166,7 +166,7 @@ id: db0ae4e3-4f10-4802-bc40-0b880cbf02c7
             <h2 class="h3 text-center" style="text-transform: uppercase; font-weight: 900; margin-bottom: 8px">About ARI</h2>
           <p>Councils provide professional education and prevention; coordinate interventions and services for victims and perpetrators; and contribute to both the improvement of the legal system and the administration of justice.</p>
           <!-- <div class="text-center">
-          <a class="btn btn-default" href="#map" style="font-weight: 700; font-family: 'Lato', sans-serif; text-transform: uppercase; color: #777; font-size: 12px; margin-top: 15px;">Find out More&nbsp;&nbsp;<i class="fa fa-angle-double-down" style="font-weight: 900"></i></a>
+          <a class="btn btn-default" class="scroll" data-speed="2000" href="#map" style="font-weight: 700; font-family: 'Lato', sans-serif; text-transform: uppercase; color: #777; font-size: 12px; margin-top: 15px;">Find out More&nbsp;&nbsp;<i class="fa fa-angle-double-down" style="font-weight: 900"></i></a>
         </div> -->
 
   </div>
@@ -198,7 +198,6 @@ id: db0ae4e3-4f10-4802-bc40-0b880cbf02c7
       </div>
     </section>
 
-<div id="map"></div>
   <div id="Illinois" class="__vue-root"></div>
 
 <section style="background: #eee; border-top: 1px solid #aaa; border-bottom: 1px solid #aaa;">
