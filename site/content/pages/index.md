@@ -50,6 +50,83 @@ id: db0ae4e3-4f10-4802-bc40-0b880cbf02c7
 
 .tab-panel {padding-right: 25px} */
 
+.col-hero1 {
+    background: #045354;
+    color: #fff
+}
+
+.col-hero2 {
+    background: #068587;
+    color: #fff
+}
+
+.col-hero3 {
+    background: #35999B;
+    color: #fff
+}
+
+.col-hero1 .flex-content,.col-hero2 .flex-content,.col-hero3 .flex-content {
+    padding: 20px 10px 20px 10px
+}
+
+@media screen and (min-width: 768px) {
+    .equal,.equal>div[class*='col-'] {
+        display:-webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        flex: 1 0 auto
+    }
+}
+
+.eqWrap {
+    display: flex
+}
+
+.eq {
+    padding: 10px
+}
+
+.equalHW {
+    flex: 1
+}
+
+.equalHMWrap {
+    justify-content: space-between
+}
+
+.equalHM {
+    width: 32%
+}
+
+.equalHMRWrap {
+    justify-content: space-between;
+    flex-wrap: wrap
+}
+
+.equalHMR {
+    width: 32%;
+    margin-bottom: 2%
+}
+
+.equalHMVWrap {
+    flex-wrap: wrap
+}
+
+.equalHMV {
+    width: 32%;
+    margin: 1%
+}
+
+.equalHMV:nth-of-type(3n) {
+    margin-right: 0
+}
+
+.equalHMV:nth-of-type(3n+1) {
+    margin-left: 0
+}
+
 @media (min-width: 768px) {
   .table-row {
     display: table;
@@ -70,18 +147,57 @@ id: db0ae4e3-4f10-4802-bc40-0b880cbf02c7
 <div class="homeHero hidden-sm hidden-xs" {{if get:splash}}style="background-image: url('/assets/img/ari-splash-0{{get:splash}}.jpg');"{{else}}style="background-image: url({{splash}});"{{/if}}>
   <div class="homeHeader">
     <h3> Adult Redeploy Illinois</h3>
-    <h4> Diverting non-violent offenders from prison to more effective, and less expensive,
-community-based supervision/services!</h4>
+    <h4> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dolor mi, sollicitudin ut elit ut, tincidunt pulvinar nisl. Fusce auctor, nulla ac dapibus dapibus, neque risus molestie nisl, in tempus ligula erat vel neque.</h4>
   </div>
 </div>
 
 <div style="background: #eee" class="homeHero mobile hidden-md hidden-lg">
   <div class="text-center">
     <h3> Adult Redeploy Illinois</h3>
-    <h4> Diverting non-violent offenders from prison to more effective, and less expensive,
-community-based supervision/services!</h4>
+    <h4> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dolor mi, sollicitudin ut elit ut, tincidunt pulvinar nisl. Fusce auctor, nulla ac dapibus dapibus, neque risus molestie nisl, in tempus ligula erat vel neque.</h4>
   </div>
 </div>
+
+<section id="flex-section" class="hidden-xs" style="margin-top: 30px">
+      <div class="equalHWrap eqWrap">
+        <div class="equalHW eq col-hero1">
+
+  <div class="flex-content">
+            <h2 class="h3 text-center" style="text-transform: uppercase; font-weight: 900; margin-bottom: 8px">About ARI</h2>
+          <p>Councils provide professional education and prevention; coordinate interventions and services for victims and perpetrators; and contribute to both the improvement of the legal system and the administration of justice.</p>
+          <!-- <div class="text-center">
+          <a class="btn btn-default heavy" href="#find-a-council" style="pointer" role="button">Find out More&nbsp;&nbsp;<i class="fa fa-angle-double-down" style="font-weight: 900"></i></a>
+        </div> -->
+
+  </div>
+
+  </div>
+
+<div class="equalHW eq col-hero2">
+
+  <div class="flex-content">
+            <h2 class="h3 text-center" style="text-transform: uppercase; font-weight: 900; margin-bottom: 8px">Get the Facts</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dolor mi, sollicitudin ut elit ut, tincidunt pulvinar nisl. Fusce auctor, nulla ac dapibus dapibus, neque risus molestie nisl, in tempus ligula erat vel neque.</p><br/>
+          <!-- <div class="text-center">
+          <a class="btn btn-default heavy" href="#about-the-ifvcc" style="pointer" role="button">Find out More&nbsp;&nbsp;<i class="fa fa-angle-double-down" style="font-weight: 900"></i></a>
+        </div> -->
+
+  </div>
+
+</div>
+        <div class="equalHW eq col-hero3">
+
+   <div class="flex-content">
+            <h2 class="h3 text-center" style="text-transform: uppercase; font-weight: 900; margin-bottom: 8px">News & Events</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dolor mi, sollicitudin ut elit ut, tincidunt pulvinar nisl. Fusce auctor, nulla ac dapibus dapibus, neque risus molestie nisl, in tempus ligula erat vel neque.</p>
+          <!-- <div class="text-center">
+          <a class="btn btn-default heavy" href="#about-the-ifvcc" style="pointer" role="button">Find out More&nbsp;&nbsp;<i class="fa fa-angle-double-down" style="font-weight: 900"></i></a>
+          </div> -->
+        </div>
+
+  </div>
+      </div>
+    </section>
 
 <!-- <section style="margin-top: 0px;" class="hidden-xs hidden-sm">
 <div class="container-fluid">
@@ -140,7 +256,7 @@ community-based supervision/services!</h4>
 </div>
 </section> -->
 
-<section style="margin-top: -45px">
+<!-- <section style="margin-top: -45px">
 <div style="background: #fff;">
         <div class="container" style="padding: 75px 30px 50px 30px">
             <div class="row">
@@ -158,7 +274,7 @@ community-based supervision/services!</h4>
             </div>
             </div>
 
-</section>
+</section> -->
 
  <!-- <section style="padding-top: 30px; border-top: 1px solid #eee">
   <div style="background: #ffffff;">
@@ -210,7 +326,7 @@ community-based supervision/services!</h4>
   <div id="Illinois" class="__vue-root"></div>
 
 <section style="background: #eee; border-top: 1px solid #aaa; border-bottom: 1px solid #aaa;">
-<div class="container-fluid" style=" padding-top: 50px; padding-bottom: 50px">
+<div class="container" style=" padding-top: 50px; padding-bottom: 50px">
  <div class="row">
  <div class="col-md-6" style="padding-left: 35px; padding-right: 35px">
  <h1 class="h2">ARI News & Updates</h1>
